@@ -1,7 +1,7 @@
 {
   "name": "hew_measures_vocabulary",
   "id": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "prefixes": [
     {
       "prefix_prefix": "mesh",
@@ -53,7 +53,7 @@
     },
     {
       "prefix_prefix": "vocab",
-      "prefix_reference": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld"
+      "prefix_reference": "https://NIEHS.github.io/HEW_Measures/dist/"
     }
   ],
   "default_prefix": "vocab",
@@ -61,37 +61,37 @@
   "classes": [
     {
       "name": "Category",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCategory",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Category",
       "description": "Root abstraction for all vocabulary domains.",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "abstract": true,
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCategory",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Category",
       "@type": "ClassDefinition"
     },
     {
       "name": "Health",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Health",
       "description": "Root domain for Health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Category",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Health",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthData",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthData",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthData",
       "description": "Subcategory: Health Data",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Health",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthData",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthData",
       "@type": "ClassDefinition"
     },
     {
       "name": "ClaimsData",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldClaimsData",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ClaimsData",
       "description": "administrative claims, healthcare",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -103,12 +103,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldClaimsData",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ClaimsData",
       "@type": "ClassDefinition"
     },
     {
       "name": "ElectronicHealthRecords",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldElectronicHealthRecords",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ElectronicHealthRecords",
       "description": "electronic health records",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -120,12 +120,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldElectronicHealthRecords",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ElectronicHealthRecords",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthSurveyData",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthSurveyData",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthSurveyData",
       "description": "health surveys",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -137,12 +137,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthSurveyData",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthSurveyData",
       "@type": "ClassDefinition"
     },
     {
       "name": "MensHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMensHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MensHealth",
       "description": "men's health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -154,12 +154,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMensHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MensHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "WomensHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWomensHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WomensHealth",
       "description": "women's health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -171,12 +171,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWomensHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WomensHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "OccupationalHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOccupationalHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/OccupationalHealth",
       "description": "occupational health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -188,12 +188,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOccupationalHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/OccupationalHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "Nutrition",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNutrition",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Nutrition",
       "description": "nutrition survey",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -205,12 +205,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNutrition",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Nutrition",
       "@type": "ClassDefinition"
     },
     {
       "name": "PhysicalFitness",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPhysicalFitness",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/PhysicalFitness",
       "description": "physical fitness",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -222,12 +222,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPhysicalFitness",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/PhysicalFitness",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthBehavior",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthBehavior",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthBehavior",
       "description": "health behavior",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -239,12 +239,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthBehavior",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthBehavior",
       "@type": "ClassDefinition"
     },
     {
       "name": "ChildHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldChildHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ChildHealth",
       "description": "child health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -256,12 +256,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldChildHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ChildHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "AdolescentHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAdolescentHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AdolescentHealth",
       "description": "adolescent health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -273,12 +273,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAdolescentHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AdolescentHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "ReproductiveBirth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldReproductiveBirth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ReproductiveBirth",
       "description": "reproductive history",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -290,12 +290,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldReproductiveBirth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ReproductiveBirth",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthIndicators",
       "description": "health status indicators",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -307,12 +307,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "GeriatricHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGeriatricHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/GeriatricHealth",
       "description": "healthy aging",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -324,12 +324,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGeriatricHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/GeriatricHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "OrthopedicHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOrthopedicHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/OrthopedicHealth",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -338,12 +338,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOrthopedicHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/OrthopedicHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "MaternalAndChildHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMaternalAndChildHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MaternalAndChildHealth",
       "description": "maternal health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -355,12 +355,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMaternalAndChildHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MaternalAndChildHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "MedicationAdherence",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMedicationAdherence",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MedicationAdherence",
       "description": "medication adherance",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -372,12 +372,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMedicationAdherence",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MedicationAdherence",
       "@type": "ClassDefinition"
     },
     {
       "name": "DevelopmentalHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDevelopmentalHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/DevelopmentalHealth",
       "description": "developmental origins of health and disease",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -389,12 +389,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDevelopmentalHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/DevelopmentalHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "PatientReportedOutcomes",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPatientReportedOutcomes",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/PatientReportedOutcomes",
       "description": "patient reported outcome measures",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -406,12 +406,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPatientReportedOutcomes",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/PatientReportedOutcomes",
       "@type": "ClassDefinition"
     },
     {
       "name": "Immunization",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImmunization",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Immunization",
       "description": "immunization",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -423,12 +423,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImmunization",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Immunization",
       "@type": "ClassDefinition"
     },
     {
       "name": "RadiationTherapy",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadiationTherapy",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/RadiationTherapy",
       "description": "radiotherapy",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -440,12 +440,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadiationTherapy",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/RadiationTherapy",
       "@type": "ClassDefinition"
     },
     {
       "name": "DiseaseRisk",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDiseaseRisk",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/DiseaseRisk",
       "description": "risk factors",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -457,12 +457,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDiseaseRisk",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/DiseaseRisk",
       "@type": "ClassDefinition"
     },
     {
       "name": "Disability",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDisability",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Disability",
       "description": "persons with disabilities",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -474,12 +474,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDisability",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Disability",
       "@type": "ClassDefinition"
     },
     {
       "name": "Fertility",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFertility",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Fertility",
       "description": "fertility",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -491,12 +491,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFertility",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Fertility",
       "@type": "ClassDefinition"
     },
     {
       "name": "Genetics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGenetics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Genetics",
       "description": "genetics",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -508,12 +508,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGenetics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Genetics",
       "@type": "ClassDefinition"
     },
     {
       "name": "Metabolomics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMetabolomics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Metabolomics",
       "description": "metabolomics",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -525,12 +525,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMetabolomics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Metabolomics",
       "@type": "ClassDefinition"
     },
     {
       "name": "ClinicalChemistry",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldClinicalChemistry",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ClinicalChemistry",
       "description": "clinical chemistry tests",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -542,12 +542,12 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldClinicalChemistry",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ClinicalChemistry",
       "@type": "ClassDefinition"
     },
     {
       "name": "WellBeing",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWellBeing",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WellBeing",
       "description": "Local concept term for Well-Being",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -555,22 +555,22 @@
       ],
       "is_a": "HealthData",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWellBeing",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WellBeing",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthPopulation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthPopulation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthPopulation",
       "description": "Subcategory: Health Population",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Health",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthPopulation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthPopulation",
       "@type": "ClassDefinition"
     },
     {
       "name": "GeneralPopulation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGeneralPopulation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/GeneralPopulation",
       "description": "population",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -582,12 +582,12 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGeneralPopulation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/GeneralPopulation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Inpatient",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInpatient",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Inpatient",
       "description": "inpatients",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -599,12 +599,12 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInpatient",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Inpatient",
       "@type": "ClassDefinition"
     },
     {
       "name": "Readmissions",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldReadmissions",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Readmissions",
       "description": "patient readmission",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -616,12 +616,12 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldReadmissions",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Readmissions",
       "@type": "ClassDefinition"
     },
     {
       "name": "Outpatient",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOutpatient",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Outpatient",
       "description": "outpatients",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -633,12 +633,12 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOutpatient",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Outpatient",
       "@type": "ClassDefinition"
     },
     {
       "name": "EmergencyCare",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEmergencyCare",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EmergencyCare",
       "description": "emergency medical services",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -650,12 +650,12 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEmergencyCare",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EmergencyCare",
       "@type": "ClassDefinition"
     },
     {
       "name": "IndigenousPeople",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIndigenousPeople",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/IndigenousPeople",
       "description": "indigenous peoples",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -667,12 +667,12 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIndigenousPeople",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/IndigenousPeople",
       "@type": "ClassDefinition"
     },
     {
       "name": "PopulationsOfConcern",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPopulationsOfConcern",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/PopulationsOfConcern",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -681,22 +681,22 @@
       ],
       "is_a": "HealthPopulation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPopulationsOfConcern",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/PopulationsOfConcern",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthSystem",
       "description": "Subcategory: Health System",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Health",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareProviderCharacteristics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareProviderCharacteristics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareProviderCharacteristics",
       "description": "health personnel",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -708,12 +708,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareProviderCharacteristics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareProviderCharacteristics",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareFacilitiesCharacteristics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareFacilitiesCharacteristics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareFacilitiesCharacteristics",
       "description": "health facilities",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -725,12 +725,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareFacilitiesCharacteristics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareFacilitiesCharacteristics",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthOutcomes",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthOutcomes",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthOutcomes",
       "description": "patient outcome assessment",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -742,12 +742,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthOutcomes",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthOutcomes",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareQuality",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareQuality",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareQuality",
       "description": "quality of health care",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -759,12 +759,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareQuality",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareQuality",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareIndicators",
       "description": "quality indicators, health care",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -776,12 +776,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthPrevention",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthPrevention",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthPrevention",
       "description": "preventive health service",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -793,12 +793,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthPrevention",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthPrevention",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareBenefits",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareBenefits",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareBenefits",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -807,12 +807,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareBenefits",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareBenefits",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareReferrals",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareReferrals",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareReferrals",
       "description": "referral and consultation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -824,12 +824,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareReferrals",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareReferrals",
       "@type": "ClassDefinition"
     },
     {
       "name": "MedicalFinancialAssistance",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMedicalFinancialAssistance",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MedicalFinancialAssistance",
       "description": "public assistance",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -841,12 +841,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMedicalFinancialAssistance",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MedicalFinancialAssistance",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCareUtilization",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareUtilization",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareUtilization",
       "description": "health service utilization",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -858,12 +858,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCareUtilization",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCareUtilization",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthEquity",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthEquity",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthEquity",
       "description": "health equity",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -875,12 +875,12 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthEquity",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthEquity",
       "@type": "ClassDefinition"
     },
     {
       "name": "VaccineSafetyAndEffectiveness",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVaccineSafetyAndEffectiveness",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VaccineSafetyAndEffectiveness",
       "description": "vaccine effectiveness rate",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -892,22 +892,22 @@
       ],
       "is_a": "HealthSystem",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVaccineSafetyAndEffectiveness",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VaccineSafetyAndEffectiveness",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthCondition",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCondition",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCondition",
       "description": "Subcategory: Health Condition",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Health",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthCondition",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthCondition",
       "@type": "ClassDefinition"
     },
     {
       "name": "GeneralHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGeneralHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/GeneralHealth",
       "description": "Local concept term for General Health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -915,12 +915,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGeneralHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/GeneralHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "CardiovascularSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCardiovascularSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/CardiovascularSystem",
       "description": "cardiovascular system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -932,12 +932,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCardiovascularSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/CardiovascularSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "EndocrineSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEndocrineSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EndocrineSystem",
       "description": "endocrine system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -949,12 +949,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEndocrineSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EndocrineSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "GastrointestinalSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGastrointestinalSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/GastrointestinalSystem",
       "description": "digestive system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -966,12 +966,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGastrointestinalSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/GastrointestinalSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "HematopoieticSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHematopoieticSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HematopoieticSystem",
       "description": "hematopoietic system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -983,12 +983,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHematopoieticSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HematopoieticSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "ImmuneSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImmuneSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ImmuneSystem",
       "description": "immune system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1000,12 +1000,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImmuneSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ImmuneSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "IntegumentarySystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIntegumentarySystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/IntegumentarySystem",
       "description": "integumental system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1017,12 +1017,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIntegumentarySystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/IntegumentarySystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "MusculoskeletalSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMusculoskeletalSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MusculoskeletalSystem",
       "description": "musculoskeletal",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1034,12 +1034,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMusculoskeletalSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MusculoskeletalSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "ReproductiveSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldReproductiveSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ReproductiveSystem",
       "description": "reproductive system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1051,12 +1051,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldReproductiveSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ReproductiveSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "RespiratorySystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRespiratorySystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/RespiratorySystem",
       "description": "respiratory system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1068,12 +1068,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRespiratorySystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/RespiratorySystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "ThoracicSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldThoracicSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ThoracicSystem",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1082,12 +1082,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldThoracicSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ThoracicSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "UrinarySystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldUrinarySystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/UrinarySystem",
       "description": "renal system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1099,12 +1099,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldUrinarySystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/UrinarySystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "NervousSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNervousSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/NervousSystem",
       "description": "nervous system",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1116,12 +1116,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNervousSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/NervousSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "Injury",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInjury",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Injury",
       "description": "injury",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1133,12 +1133,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInjury",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Injury",
       "@type": "ClassDefinition"
     },
     {
       "name": "InfectiousDisease",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInfectiousDisease",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/InfectiousDisease",
       "description": "infectious disease",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1150,12 +1150,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInfectiousDisease",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/InfectiousDisease",
       "@type": "ClassDefinition"
     },
     {
       "name": "Cancer",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCancer",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Cancer",
       "description": "neoplasm",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1167,12 +1167,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCancer",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Cancer",
       "@type": "ClassDefinition"
     },
     {
       "name": "Asthma",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAsthma",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Asthma",
       "description": "asthma",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1184,12 +1184,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAsthma",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Asthma",
       "@type": "ClassDefinition"
     },
     {
       "name": "MentalHealth",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMentalHealth",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MentalHealth",
       "description": "mental health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1201,12 +1201,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMentalHealth",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MentalHealth",
       "@type": "ClassDefinition"
     },
     {
       "name": "Diabetes",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDiabetes",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Diabetes",
       "description": "diabetes mellitus",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1218,12 +1218,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDiabetes",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Diabetes",
       "@type": "ClassDefinition"
     },
     {
       "name": "Osteoporosis",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOsteoporosis",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Osteoporosis",
       "description": "osteoporosis",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1235,12 +1235,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOsteoporosis",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Osteoporosis",
       "@type": "ClassDefinition"
     },
     {
       "name": "BirthDefect",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBirthDefect",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/BirthDefect",
       "description": "congenital abnormalities",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1252,12 +1252,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBirthDefect",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/BirthDefect",
       "@type": "ClassDefinition"
     },
     {
       "name": "ChronicObstructivePulmonaryDiseaseCopd",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldChronicObstructivePulmonaryDiseaseCopd",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ChronicObstructivePulmonaryDiseaseCopd",
       "description": "chronic pulmonary obstruction",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1269,12 +1269,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldChronicObstructivePulmonaryDiseaseCopd",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ChronicObstructivePulmonaryDiseaseCopd",
       "@type": "ClassDefinition"
     },
     {
       "name": "HeatRelatedIllnesses",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHeatRelatedIllnesses",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HeatRelatedIllnesses",
       "description": "heat related illness",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1286,12 +1286,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHeatRelatedIllnesses",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HeatRelatedIllnesses",
       "@type": "ClassDefinition"
     },
     {
       "name": "HormoneDisorder",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHormoneDisorder",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HormoneDisorder",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1300,12 +1300,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHormoneDisorder",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HormoneDisorder",
       "@type": "ClassDefinition"
     },
     {
       "name": "Stroke",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldStroke",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Stroke",
       "description": "stroke",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1317,12 +1317,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldStroke",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Stroke",
       "@type": "ClassDefinition"
     },
     {
       "name": "KidneyDisease",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldKidneyDisease",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/KidneyDisease",
       "description": "kidney disorder",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1334,12 +1334,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldKidneyDisease",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/KidneyDisease",
       "@type": "ClassDefinition"
     },
     {
       "name": "Obesity",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldObesity",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Obesity",
       "description": "obesity",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1351,12 +1351,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldObesity",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Obesity",
       "@type": "ClassDefinition"
     },
     {
       "name": "DentalAndOralConditions",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDentalAndOralConditions",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/DentalAndOralConditions",
       "description": "dental disorder",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1368,12 +1368,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDentalAndOralConditions",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/DentalAndOralConditions",
       "@type": "ClassDefinition"
     },
     {
       "name": "Arthritis",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldArthritis",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Arthritis",
       "description": "arthritis",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1385,12 +1385,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldArthritis",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Arthritis",
       "@type": "ClassDefinition"
     },
     {
       "name": "Covid19",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCovid19",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Covid19",
       "description": "COVID-19",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1402,12 +1402,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCovid19",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Covid19",
       "@type": "ClassDefinition"
     },
     {
       "name": "Death",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDeath",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Death",
       "description": "death",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1419,12 +1419,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDeath",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Death",
       "@type": "ClassDefinition"
     },
     {
       "name": "EyeAndVision",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEyeAndVision",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EyeAndVision",
       "description": "eye disorder",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1436,12 +1436,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEyeAndVision",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EyeAndVision",
       "@type": "ClassDefinition"
     },
     {
       "name": "AidsHiv",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAidsHiv",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AidsHiv",
       "description": "two terms",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1450,12 +1450,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAidsHiv",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AidsHiv",
       "@type": "ClassDefinition"
     },
     {
       "name": "Tuberculosis",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTuberculosis",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Tuberculosis",
       "description": "tuberculosis",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1467,12 +1467,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTuberculosis",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Tuberculosis",
       "@type": "ClassDefinition"
     },
     {
       "name": "CommunicableDisease",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCommunicableDisease",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/CommunicableDisease",
       "description": "infectious disease",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1481,12 +1481,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCommunicableDisease",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/CommunicableDisease",
       "@type": "ClassDefinition"
     },
     {
       "name": "Anemia",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAnemia",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Anemia",
       "description": "anemia",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1498,12 +1498,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAnemia",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Anemia",
       "@type": "ClassDefinition"
     },
     {
       "name": "HearingLoss",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHearingLoss",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HearingLoss",
       "description": "hearing impairment",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1515,12 +1515,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHearingLoss",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HearingLoss",
       "@type": "ClassDefinition"
     },
     {
       "name": "Allergy",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAllergy",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Allergy",
       "description": "allergy",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1532,12 +1532,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAllergy",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Allergy",
       "@type": "ClassDefinition"
     },
     {
       "name": "Anxiety",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAnxiety",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Anxiety",
       "description": "anxiety",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1549,12 +1549,12 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAnxiety",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Anxiety",
       "@type": "ClassDefinition"
     },
     {
       "name": "Hypertension",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHypertension",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Hypertension",
       "description": "hypertension",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1566,32 +1566,32 @@
       ],
       "is_a": "HealthCondition",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHypertension",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Hypertension",
       "@type": "ClassDefinition"
     },
     {
       "name": "Environment",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEnvironment",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Environment",
       "description": "Root domain for Environment",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Category",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEnvironment",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Environment",
       "@type": "ClassDefinition"
     },
     {
       "name": "RemoteSensing",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRemoteSensing",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/RemoteSensing",
       "description": "Subcategory: Remote Sensing",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Environment",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRemoteSensing",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/RemoteSensing",
       "@type": "ClassDefinition"
     },
     {
       "name": "NightimeImagery",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNightimeImagery",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/NightimeImagery",
       "description": "Local concept term for Nightime Imagery",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1599,12 +1599,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNightimeImagery",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/NightimeImagery",
       "@type": "ClassDefinition"
     },
     {
       "name": "LandEnvironmentIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandEnvironmentIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandEnvironmentIndicators",
       "description": "environmental indicators",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1616,12 +1616,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandEnvironmentIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandEnvironmentIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "InfraredRadiation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInfraredRadiation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/InfraredRadiation",
       "description": "infrared radiation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1633,12 +1633,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInfraredRadiation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/InfraredRadiation",
       "@type": "ClassDefinition"
     },
     {
       "name": "LightAbsorptionScatter",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLightAbsorptionScatter",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LightAbsorptionScatter",
       "description": "two terms",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1647,12 +1647,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLightAbsorptionScatter",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LightAbsorptionScatter",
       "@type": "ClassDefinition"
     },
     {
       "name": "SolarRadiation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSolarRadiation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SolarRadiation",
       "description": "solar radiation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1664,12 +1664,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSolarRadiation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SolarRadiation",
       "@type": "ClassDefinition"
     },
     {
       "name": "UltravioletRadiation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldUltravioletRadiation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/UltravioletRadiation",
       "description": "ultraviolet radiation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1681,12 +1681,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldUltravioletRadiation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/UltravioletRadiation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Radiation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadiation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Radiation",
       "description": "radiation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1698,12 +1698,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadiation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Radiation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Evaporation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEvaporation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Evaporation",
       "description": "evaporation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1715,12 +1715,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEvaporation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Evaporation",
       "@type": "ClassDefinition"
     },
     {
       "name": "RadiativeForcing",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadiativeForcing",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/RadiativeForcing",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1729,12 +1729,12 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadiativeForcing",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/RadiativeForcing",
       "@type": "ClassDefinition"
     },
     {
       "name": "AtmosphericStability",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAtmosphericStability",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AtmosphericStability",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1743,32 +1743,32 @@
       ],
       "is_a": "RemoteSensing",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAtmosphericStability",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AtmosphericStability",
       "@type": "ClassDefinition"
     },
     {
       "name": "Land",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLand",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Land",
       "description": "Subcategory: Land",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Environment",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLand",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Land",
       "@type": "ClassDefinition"
     },
     {
       "name": "Vegetation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Vegetation",
       "description": "Nested Subcategory: Vegetation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Land",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Vegetation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Biomass",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBiomass",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Biomass",
       "description": "organic material",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1780,12 +1780,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBiomass",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Biomass",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationCover",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationCover",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationCover",
       "description": "vegetation layer",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1797,12 +1797,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationCover",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationCover",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationType",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationType",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationType",
       "description": "vegetation layer",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1814,12 +1814,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationType",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationType",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationPhenology",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationPhenology",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationPhenology",
       "description": "plant phenology trait",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1831,12 +1831,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationPhenology",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationPhenology",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationStress",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationStress",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationStress",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1845,12 +1845,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationStress",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationStress",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationProductivity",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationProductivity",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationProductivity",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1859,12 +1859,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationProductivity",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationProductivity",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationStructure",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationStructure",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationStructure",
       "description": "vegetation layer",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1876,12 +1876,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationStructure",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationStructure",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationIndicators",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1890,12 +1890,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "VegetationGreenness",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationGreenness",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationGreenness",
       "description": "vegetated area",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1907,12 +1907,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVegetationGreenness",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VegetationGreenness",
       "@type": "ClassDefinition"
     },
     {
       "name": "CanopyCharacteristics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCanopyCharacteristics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/CanopyCharacteristics",
       "description": "canopy",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1924,12 +1924,12 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCanopyCharacteristics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/CanopyCharacteristics",
       "@type": "ClassDefinition"
     },
     {
       "name": "SolarInducedFluorescence",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSolarInducedFluorescence",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SolarInducedFluorescence",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1938,22 +1938,22 @@
       ],
       "is_a": "Vegetation",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSolarInducedFluorescence",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SolarInducedFluorescence",
       "@type": "ClassDefinition"
     },
     {
       "name": "LandSurface",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandSurface",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandSurface",
       "description": "Nested Subcategory: Land Surface",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Land",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandSurface",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandSurface",
       "@type": "ClassDefinition"
     },
     {
       "name": "Topography",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTopography",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Topography",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1962,12 +1962,12 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTopography",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Topography",
       "@type": "ClassDefinition"
     },
     {
       "name": "SurfaceReflectance",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSurfaceReflectance",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SurfaceReflectance",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1976,12 +1976,12 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSurfaceReflectance",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SurfaceReflectance",
       "@type": "ClassDefinition"
     },
     {
       "name": "LandUse",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandUse",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandUse",
       "description": "land use process",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -1993,12 +1993,12 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandUse",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandUse",
       "@type": "ClassDefinition"
     },
     {
       "name": "LandCover",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandCover",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandCover",
       "description": "vegetated area",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2010,12 +2010,12 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandCover",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandCover",
       "@type": "ClassDefinition"
     },
     {
       "name": "LandSurfaceCharacteristics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandSurfaceCharacteristics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandSurfaceCharacteristics",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2024,12 +2024,12 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLandSurfaceCharacteristics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LandSurfaceCharacteristics",
       "@type": "ClassDefinition"
     },
     {
       "name": "SoilMoisture",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSoilMoisture",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SoilMoisture",
       "description": "concentration of liquid water in soil",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2041,12 +2041,12 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSoilMoisture",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SoilMoisture",
       "@type": "ClassDefinition"
     },
     {
       "name": "SoilTemperature",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSoilTemperature",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SoilTemperature",
       "description": "temperature of soil",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2058,32 +2058,32 @@
       ],
       "is_a": "LandSurface",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSoilTemperature",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SoilTemperature",
       "@type": "ClassDefinition"
     },
     {
       "name": "Water",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWater",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Water",
       "description": "Subcategory: Water",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Environment",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWater",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Water",
       "@type": "ClassDefinition"
     },
     {
       "name": "WaterQuality",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterQuality",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterQuality",
       "description": "Nested Subcategory: Water Quality",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Water",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterQuality",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterQuality",
       "@type": "ClassDefinition"
     },
     {
       "name": "ImpairedWater",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImpairedWater",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ImpairedWater",
       "description": "water pollution",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2095,12 +2095,12 @@
       ],
       "is_a": "WaterQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImpairedWater",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ImpairedWater",
       "@type": "ClassDefinition"
     },
     {
       "name": "DrinkingWater",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDrinkingWater",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/DrinkingWater",
       "description": "drinking water",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2112,12 +2112,12 @@
       ],
       "is_a": "WaterQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDrinkingWater",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/DrinkingWater",
       "@type": "ClassDefinition"
     },
     {
       "name": "WaterComposition",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterComposition",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterComposition",
       "description": "composition of water",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2129,12 +2129,12 @@
       ],
       "is_a": "WaterQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterComposition",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterComposition",
       "@type": "ClassDefinition"
     },
     {
       "name": "WaterQualityIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterQualityIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterQualityIndicators",
       "description": "water qulaity",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2146,12 +2146,12 @@
       ],
       "is_a": "WaterQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterQualityIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterQualityIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "WasteWater",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWasteWater",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WasteWater",
       "description": "waste water",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2163,22 +2163,22 @@
       ],
       "is_a": "WaterQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWasteWater",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WasteWater",
       "@type": "ClassDefinition"
     },
     {
       "name": "WaterBodies",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterBodies",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterBodies",
       "description": "Nested Subcategory: Water Bodies",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Water",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterBodies",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterBodies",
       "@type": "ClassDefinition"
     },
     {
       "name": "SeaSurfaceTemperature",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSeaSurfaceTemperature",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SeaSurfaceTemperature",
       "description": "temperature of sea surface",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2190,12 +2190,12 @@
       ],
       "is_a": "WaterBodies",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSeaSurfaceTemperature",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SeaSurfaceTemperature",
       "@type": "ClassDefinition"
     },
     {
       "name": "OceanColor",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOceanColor",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/OceanColor",
       "description": "color",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2207,12 +2207,12 @@
       ],
       "is_a": "WaterBodies",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOceanColor",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/OceanColor",
       "@type": "ClassDefinition"
     },
     {
       "name": "SeaSurfaceSalinity",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSeaSurfaceSalinity",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SeaSurfaceSalinity",
       "description": "salinity",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2224,12 +2224,12 @@
       ],
       "is_a": "WaterBodies",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSeaSurfaceSalinity",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SeaSurfaceSalinity",
       "@type": "ClassDefinition"
     },
     {
       "name": "Evapotranspiration",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEvapotranspiration",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Evapotranspiration",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2238,12 +2238,12 @@
       ],
       "is_a": "WaterBodies",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEvapotranspiration",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Evapotranspiration",
       "@type": "ClassDefinition"
     },
     {
       "name": "GroundWater",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGroundWater",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/GroundWater",
       "description": "ground water",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2255,12 +2255,12 @@
       ],
       "is_a": "WaterBodies",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGroundWater",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/GroundWater",
       "@type": "ClassDefinition"
     },
     {
       "name": "SeaIce",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSeaIce",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SeaIce",
       "description": "sea ice",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2272,32 +2272,32 @@
       ],
       "is_a": "WaterBodies",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSeaIce",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SeaIce",
       "@type": "ClassDefinition"
     },
     {
       "name": "Air",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAir",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Air",
       "description": "Subcategory: Air",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Environment",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAir",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Air",
       "@type": "ClassDefinition"
     },
     {
       "name": "AirQuality",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAirQuality",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AirQuality",
       "description": "Nested Subcategory: Air Quality",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Air",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAirQuality",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AirQuality",
       "@type": "ClassDefinition"
     },
     {
       "name": "Diesel",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDiesel",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Diesel",
       "description": "diesel exhaust",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2309,12 +2309,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDiesel",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Diesel",
       "@type": "ClassDefinition"
     },
     {
       "name": "Pm25",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPm25",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Pm25",
       "description": "not separated",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2323,12 +2323,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPm25",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Pm25",
       "@type": "ClassDefinition"
     },
     {
       "name": "Pm10",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPm10",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Pm10",
       "description": "not separated",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2337,12 +2337,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPm10",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Pm10",
       "@type": "ClassDefinition"
     },
     {
       "name": "ParticulateMatterPm25Pm10",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldParticulateMatterPm25Pm10",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ParticulateMatterPm25Pm10",
       "description": "ultrafine respirable suspended particulate matter",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2354,12 +2354,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldParticulateMatterPm25Pm10",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ParticulateMatterPm25Pm10",
       "@type": "ClassDefinition"
     },
     {
       "name": "SulfurDioxideSo2",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSulfurDioxideSo2",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SulfurDioxideSo2",
       "description": "sulfur dioxide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2371,12 +2371,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSulfurDioxideSo2",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SulfurDioxideSo2",
       "@type": "ClassDefinition"
     },
     {
       "name": "OzoneO3",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOzoneO3",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/OzoneO3",
       "description": "ozone",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2388,12 +2388,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOzoneO3",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/OzoneO3",
       "@type": "ClassDefinition"
     },
     {
       "name": "CarbonMonoxideCo",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCarbonMonoxideCo",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/CarbonMonoxideCo",
       "description": "carbon monoxide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2405,12 +2405,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCarbonMonoxideCo",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/CarbonMonoxideCo",
       "@type": "ClassDefinition"
     },
     {
       "name": "CarbonDioxideCo2",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCarbonDioxideCo2",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/CarbonDioxideCo2",
       "description": "carbon dioxide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2422,12 +2422,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCarbonDioxideCo2",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/CarbonDioxideCo2",
       "@type": "ClassDefinition"
     },
     {
       "name": "AirQualityIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAirQualityIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AirQualityIndicators",
       "description": "not found - see EPA",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2436,12 +2436,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAirQualityIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AirQualityIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "AirPollutants",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAirPollutants",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AirPollutants",
       "description": "air pollution",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2453,12 +2453,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAirPollutants",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AirPollutants",
       "@type": "ClassDefinition"
     },
     {
       "name": "NitrogenDioxideNo2",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNitrogenDioxideNo2",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/NitrogenDioxideNo2",
       "description": "nitrogen dioxide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2470,12 +2470,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNitrogenDioxideNo2",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/NitrogenDioxideNo2",
       "@type": "ClassDefinition"
     },
     {
       "name": "FormaldehydeHcho",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFormaldehydeHcho",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FormaldehydeHcho",
       "description": "formaldehyde",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2487,12 +2487,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFormaldehydeHcho",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FormaldehydeHcho",
       "@type": "ClassDefinition"
     },
     {
       "name": "Dust",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDust",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Dust",
       "description": "dust",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2504,12 +2504,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDust",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Dust",
       "@type": "ClassDefinition"
     },
     {
       "name": "AmmoniaNh3",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAmmoniaNh3",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AmmoniaNh3",
       "description": "ammonia",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2521,12 +2521,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAmmoniaNh3",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AmmoniaNh3",
       "@type": "ClassDefinition"
     },
     {
       "name": "Aerosol",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAerosol",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Aerosol",
       "description": "aerosol",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2538,12 +2538,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAerosol",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Aerosol",
       "@type": "ClassDefinition"
     },
     {
       "name": "TraceGases",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTraceGases",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/TraceGases",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2552,12 +2552,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTraceGases",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/TraceGases",
       "@type": "ClassDefinition"
     },
     {
       "name": "VolatileOrganicCompoundsVoc",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVolatileOrganicCompoundsVoc",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/VolatileOrganicCompoundsVoc",
       "description": "volatile organic compound",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2569,12 +2569,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVolatileOrganicCompoundsVoc",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/VolatileOrganicCompoundsVoc",
       "@type": "ClassDefinition"
     },
     {
       "name": "Aeroallergens",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAeroallergens",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Aeroallergens",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2583,12 +2583,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAeroallergens",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Aeroallergens",
       "@type": "ClassDefinition"
     },
     {
       "name": "BlackCarbon",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBlackCarbon",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/BlackCarbon",
       "description": "carbon black",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2600,12 +2600,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBlackCarbon",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/BlackCarbon",
       "@type": "ClassDefinition"
     },
     {
       "name": "MethaneCh4",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMethaneCh4",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/MethaneCh4",
       "description": "methane",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2617,12 +2617,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMethaneCh4",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/MethaneCh4",
       "@type": "ClassDefinition"
     },
     {
       "name": "NitrousOxideLaughingGasN2o",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNitrousOxideLaughingGasN2o",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/NitrousOxideLaughingGasN2o",
       "description": "nitrous oxide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2634,12 +2634,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNitrousOxideLaughingGasN2o",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/NitrousOxideLaughingGasN2o",
       "@type": "ClassDefinition"
     },
     {
       "name": "WaterVapor",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterVapor",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterVapor",
       "description": "water vapour",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2651,12 +2651,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWaterVapor",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WaterVapor",
       "@type": "ClassDefinition"
     },
     {
       "name": "ChlorofluorocarbonsCfc",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldChlorofluorocarbonsCfc",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ChlorofluorocarbonsCfc",
       "description": "chlorofouorocarbon",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2668,12 +2668,12 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldChlorofluorocarbonsCfc",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ChlorofluorocarbonsCfc",
       "@type": "ClassDefinition"
     },
     {
       "name": "NitricOxideNo",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNitricOxideNo",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/NitricOxideNo",
       "description": "nitric oxide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2685,32 +2685,32 @@
       ],
       "is_a": "AirQuality",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNitricOxideNo",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/NitricOxideNo",
       "@type": "ClassDefinition"
     },
     {
       "name": "Wildfire",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfire",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Wildfire",
       "description": "Subcategory: Wildfire",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Environment",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfire",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Wildfire",
       "@type": "ClassDefinition"
     },
     {
       "name": "WildfireCharacteristics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfireCharacteristics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WildfireCharacteristics",
       "description": "Nested Subcategory: Wildfire Characteristics",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Wildfire",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfireCharacteristics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WildfireCharacteristics",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireArea",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireArea",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireArea",
       "description": "area",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2722,12 +2722,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireArea",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireArea",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireLocation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireLocation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireLocation",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2736,12 +2736,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireLocation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireLocation",
       "@type": "ClassDefinition"
     },
     {
       "name": "BurnSeverity",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBurnSeverity",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/BurnSeverity",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2750,12 +2750,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBurnSeverity",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/BurnSeverity",
       "@type": "ClassDefinition"
     },
     {
       "name": "FirePerimeter",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFirePerimeter",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FirePerimeter",
       "description": "perimeter",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2767,12 +2767,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFirePerimeter",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FirePerimeter",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireType",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireType",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireType",
       "description": "land fire",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2784,12 +2784,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireType",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireType",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireHotspot",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireHotspot",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireHotspot",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2798,12 +2798,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireHotspot",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireHotspot",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireEmission",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireEmission",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireEmission",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2812,12 +2812,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireEmission",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireEmission",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireFuel",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireFuel",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireFuel",
       "description": "fuel",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2829,12 +2829,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireFuel",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireFuel",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireSmoke",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireSmoke",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireSmoke",
       "description": "smoke",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2846,12 +2846,12 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireSmoke",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireSmoke",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireDetail",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireDetail",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireDetail",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2860,22 +2860,22 @@
       ],
       "is_a": "WildfireCharacteristics",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireDetail",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireDetail",
       "@type": "ClassDefinition"
     },
     {
       "name": "WildfireManagement",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfireManagement",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/WildfireManagement",
       "description": "Nested Subcategory: Wildfire Management",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Wildfire",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfireManagement",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/WildfireManagement",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireDeathAndInjury",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireDeathAndInjury",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireDeathAndInjury",
       "description": "death by fire (event)",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2887,12 +2887,12 @@
       ],
       "is_a": "WildfireManagement",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireDeathAndInjury",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireDeathAndInjury",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireDamage",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireDamage",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireDamage",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2901,12 +2901,12 @@
       ],
       "is_a": "WildfireManagement",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireDamage",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireDamage",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireSuppression",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireSuppression",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireSuppression",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2915,12 +2915,12 @@
       ],
       "is_a": "WildfireManagement",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireSuppression",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireSuppression",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireForecasting",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireForecasting",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireForecasting",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2929,12 +2929,12 @@
       ],
       "is_a": "WildfireManagement",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireForecasting",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireForecasting",
       "@type": "ClassDefinition"
     },
     {
       "name": "FireManagement",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireManagement",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireManagement",
       "description": "planned burn",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2946,22 +2946,22 @@
       ],
       "is_a": "WildfireManagement",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFireManagement",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FireManagement",
       "@type": "ClassDefinition"
     },
     {
       "name": "Weather",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWeather",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Weather",
       "description": "Subcategory: Weather",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Environment",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWeather",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Weather",
       "@type": "ClassDefinition"
     },
     {
       "name": "Drought",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDrought",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Drought",
       "description": "drought",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2973,12 +2973,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDrought",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Drought",
       "@type": "ClassDefinition"
     },
     {
       "name": "Heat",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHeat",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Heat",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -2987,12 +2987,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHeat",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Heat",
       "@type": "ClassDefinition"
     },
     {
       "name": "Precipitation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPrecipitation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Precipitation",
       "description": "hydrological precipitation process",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3004,12 +3004,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPrecipitation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Precipitation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Temperature",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTemperature",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Temperature",
       "description": "temperature",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3021,12 +3021,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTemperature",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Temperature",
       "@type": "ClassDefinition"
     },
     {
       "name": "Flooding",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFlooding",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Flooding",
       "description": "flood",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3038,12 +3038,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFlooding",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Flooding",
       "@type": "ClassDefinition"
     },
     {
       "name": "Hurricanes",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHurricanes",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Hurricanes",
       "description": "cyclone",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3055,12 +3055,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHurricanes",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Hurricanes",
       "@type": "ClassDefinition"
     },
     {
       "name": "Tornados",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTornados",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Tornados",
       "description": "tornado",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3072,12 +3072,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTornados",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Tornados",
       "@type": "ClassDefinition"
     },
     {
       "name": "Wildfires",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfires",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Wildfires",
       "description": "wildfire",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3089,12 +3089,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWildfires",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Wildfires",
       "@type": "ClassDefinition"
     },
     {
       "name": "Humidity",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHumidity",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Humidity",
       "description": "humidity",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3106,12 +3106,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHumidity",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Humidity",
       "@type": "ClassDefinition"
     },
     {
       "name": "Winds",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWinds",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Winds",
       "description": "atmospheric wind",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3123,12 +3123,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWinds",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Winds",
       "@type": "ClassDefinition"
     },
     {
       "name": "Clouds",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldClouds",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Clouds",
       "description": "cloud",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3140,12 +3140,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldClouds",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Clouds",
       "@type": "ClassDefinition"
     },
     {
       "name": "UvRadiation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldUvRadiation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/UvRadiation",
       "description": "Local concept term for UV Radiation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3153,12 +3153,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldUvRadiation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/UvRadiation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Lightning",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLightning",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Lightning",
       "description": "atmospheric lightning",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3170,12 +3170,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLightning",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Lightning",
       "@type": "ClassDefinition"
     },
     {
       "name": "Snow",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSnow",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Snow",
       "description": "snow",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3187,12 +3187,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSnow",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Snow",
       "@type": "ClassDefinition"
     },
     {
       "name": "Sunlight",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSunlight",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Sunlight",
       "description": "solar radiation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3204,12 +3204,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSunlight",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Sunlight",
       "@type": "ClassDefinition"
     },
     {
       "name": "BarometricPressure",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBarometricPressure",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/BarometricPressure",
       "description": "pressure of air",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3221,12 +3221,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBarometricPressure",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/BarometricPressure",
       "@type": "ClassDefinition"
     },
     {
       "name": "DewPoint",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDewPoint",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/DewPoint",
       "description": "dew point",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3238,12 +3238,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDewPoint",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/DewPoint",
       "@type": "ClassDefinition"
     },
     {
       "name": "Visibility",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVisibility",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Visibility",
       "description": "atmospheric aerosol",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3255,12 +3255,12 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldVisibility",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Visibility",
       "@type": "ClassDefinition"
     },
     {
       "name": "Monsoon",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMonsoon",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Monsoon",
       "description": "monsoon wind",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3272,32 +3272,32 @@
       ],
       "is_a": "Weather",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMonsoon",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Monsoon",
       "@type": "ClassDefinition"
     },
     {
       "name": "Social",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocial",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Social",
       "description": "Root domain for Social",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Category",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocial",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Social",
       "@type": "ClassDefinition"
     },
     {
       "name": "SocialContext",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocialContext",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocialContext",
       "description": "Subcategory: Social Context",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Social",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocialContext",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocialContext",
       "@type": "ClassDefinition"
     },
     {
       "name": "Demographics",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDemographics",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Demographics",
       "description": "demographic",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3309,12 +3309,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDemographics",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Demographics",
       "@type": "ClassDefinition"
     },
     {
       "name": "Immigration",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImmigration",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Immigration",
       "description": "emigration and immigration",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3326,12 +3326,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldImmigration",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Immigration",
       "@type": "ClassDefinition"
     },
     {
       "name": "LivingConditions",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLivingConditions",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LivingConditions",
       "description": "home environment",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3343,12 +3343,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLivingConditions",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LivingConditions",
       "@type": "ClassDefinition"
     },
     {
       "name": "SocioeconomicIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocioeconomicIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocioeconomicIndicators",
       "description": "socioeconomic factors",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3360,12 +3360,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocioeconomicIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocioeconomicIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "Segregation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSegregation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Segregation",
       "description": "social segregation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3377,12 +3377,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSegregation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Segregation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Traffic",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTraffic",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Traffic",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3391,12 +3391,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTraffic",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Traffic",
       "@type": "ClassDefinition"
     },
     {
       "name": "EnvironmentalJusticeIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEnvironmentalJusticeIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EnvironmentalJusticeIndicators",
       "description": "environmental justice",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3408,12 +3408,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEnvironmentalJusticeIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EnvironmentalJusticeIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "SocialVulnerabilityIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocialVulnerabilityIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocialVulnerabilityIndicators",
       "description": "social vulnerability",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3425,12 +3425,12 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocialVulnerabilityIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocialVulnerabilityIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "RuralUrban",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRuralUrban",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/RuralUrban",
       "description": "urbanization",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3442,22 +3442,22 @@
       ],
       "is_a": "SocialContext",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRuralUrban",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/RuralUrban",
       "@type": "ClassDefinition"
     },
     {
       "name": "Economic",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEconomic",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Economic",
       "description": "Subcategory: Economic",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Social",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEconomic",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Economic",
       "@type": "ClassDefinition"
     },
     {
       "name": "Income",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIncome",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Income",
       "description": "income",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3469,12 +3469,12 @@
       ],
       "is_a": "Economic",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIncome",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Income",
       "@type": "ClassDefinition"
     },
     {
       "name": "Employment",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEmployment",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Employment",
       "description": "employment",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3486,12 +3486,12 @@
       ],
       "is_a": "Economic",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEmployment",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Employment",
       "@type": "ClassDefinition"
     },
     {
       "name": "Poverty",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPoverty",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Poverty",
       "description": "poverty",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3503,12 +3503,12 @@
       ],
       "is_a": "Economic",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPoverty",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Poverty",
       "@type": "ClassDefinition"
     },
     {
       "name": "OccupationAndIndustry",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOccupationAndIndustry",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/OccupationAndIndustry",
       "description": "technology, industry and agriculture",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3520,22 +3520,22 @@
       ],
       "is_a": "Economic",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldOccupationAndIndustry",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/OccupationAndIndustry",
       "@type": "ClassDefinition"
     },
     {
       "name": "Education",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEducation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Education",
       "description": "Subcategory: Education",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Social",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEducation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Education",
       "@type": "ClassDefinition"
     },
     {
       "name": "ProximityToSchool",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldProximityToSchool",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ProximityToSchool",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3544,12 +3544,12 @@
       ],
       "is_a": "Education",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldProximityToSchool",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ProximityToSchool",
       "@type": "ClassDefinition"
     },
     {
       "name": "EducationAttainment",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEducationAttainment",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EducationAttainment",
       "description": "education level",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3561,12 +3561,12 @@
       ],
       "is_a": "Education",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEducationAttainment",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EducationAttainment",
       "@type": "ClassDefinition"
     },
     {
       "name": "SchoolSystem",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSchoolSystem",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SchoolSystem",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3575,12 +3575,12 @@
       ],
       "is_a": "Education",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSchoolSystem",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SchoolSystem",
       "@type": "ClassDefinition"
     },
     {
       "name": "EducationalFunding",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEducationalFunding",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EducationalFunding",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3589,12 +3589,12 @@
       ],
       "is_a": "Education",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEducationalFunding",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EducationalFunding",
       "@type": "ClassDefinition"
     },
     {
       "name": "Literacy",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLiteracy",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Literacy",
       "description": "literacy",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3606,12 +3606,12 @@
       ],
       "is_a": "Education",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLiteracy",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Literacy",
       "@type": "ClassDefinition"
     },
     {
       "name": "Numeracy",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNumeracy",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Numeracy",
       "description": "quantitative literacy",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3623,22 +3623,22 @@
       ],
       "is_a": "Education",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldNumeracy",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Numeracy",
       "@type": "ClassDefinition"
     },
     {
       "name": "PhysicalInfrastructure",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPhysicalInfrastructure",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/PhysicalInfrastructure",
       "description": "Subcategory: Physical Infrastructure",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Social",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPhysicalInfrastructure",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/PhysicalInfrastructure",
       "@type": "ClassDefinition"
     },
     {
       "name": "Housing",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHousing",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Housing",
       "description": "housing",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3650,12 +3650,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHousing",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Housing",
       "@type": "ClassDefinition"
     },
     {
       "name": "Internet",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInternet",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Internet",
       "description": "internet",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3667,12 +3667,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldInternet",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Internet",
       "@type": "ClassDefinition"
     },
     {
       "name": "SocialServices",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocialServices",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocialServices",
       "description": "social work",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3684,12 +3684,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldSocialServices",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/SocialServices",
       "@type": "ClassDefinition"
     },
     {
       "name": "FoodAccess",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFoodAccess",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FoodAccess",
       "description": "access to healthy foods",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3701,12 +3701,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFoodAccess",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FoodAccess",
       "@type": "ClassDefinition"
     },
     {
       "name": "AccessToExercise",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAccessToExercise",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/AccessToExercise",
       "description": "exercise",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3718,12 +3718,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldAccessToExercise",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/AccessToExercise",
       "@type": "ClassDefinition"
     },
     {
       "name": "Migration",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMigration",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Migration",
       "description": "human migration",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3735,12 +3735,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldMigration",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Migration",
       "@type": "ClassDefinition"
     },
     {
       "name": "Crime",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCrime",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Crime",
       "description": "crime",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3752,12 +3752,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCrime",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Crime",
       "@type": "ClassDefinition"
     },
     {
       "name": "IndustryComposition",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIndustryComposition",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/IndustryComposition",
       "description": "industry",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3769,12 +3769,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldIndustryComposition",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/IndustryComposition",
       "@type": "ClassDefinition"
     },
     {
       "name": "Transportation",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTransportation",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Transportation",
       "description": "transportation",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3786,12 +3786,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldTransportation",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Transportation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Walkability",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWalkability",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Walkability",
       "description": "perceived walkability of neighborhood (observable entity)",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3803,12 +3803,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldWalkability",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Walkability",
       "@type": "ClassDefinition"
     },
     {
       "name": "BuiltEnvironmentIndicators",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBuiltEnvironmentIndicators",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/BuiltEnvironmentIndicators",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3817,12 +3817,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBuiltEnvironmentIndicators",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/BuiltEnvironmentIndicators",
       "@type": "ClassDefinition"
     },
     {
       "name": "BuiltEnvironment",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBuiltEnvironment",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/BuiltEnvironment",
       "description": "built environment",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3834,12 +3834,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldBuiltEnvironment",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/BuiltEnvironment",
       "@type": "ClassDefinition"
     },
     {
       "name": "GreenSpace",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGreenSpace",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/GreenSpace",
       "description": "parks, recreational",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3851,12 +3851,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldGreenSpace",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/GreenSpace",
       "@type": "ClassDefinition"
     },
     {
       "name": "Commute",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCommute",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Commute",
       "description": "commute",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3868,22 +3868,22 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCommute",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Commute",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthcareAccess",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthcareAccess",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthcareAccess",
       "description": "Subcategory: Healthcare Access",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Social",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthcareAccess",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthcareAccess",
       "@type": "ClassDefinition"
     },
     {
       "name": "HealthInsurance",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthInsurance",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthInsurance",
       "description": "insurance, health",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3895,12 +3895,12 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHealthInsurance",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HealthInsurance",
       "@type": "ClassDefinition"
     },
     {
       "name": "DistanceToProvider",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDistanceToProvider",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/DistanceToProvider",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3909,22 +3909,22 @@
       ],
       "is_a": "PhysicalInfrastructure",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldDistanceToProvider",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/DistanceToProvider",
       "@type": "ClassDefinition"
     },
     {
       "name": "Exposures",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldExposures",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/Exposures",
       "description": "Root domain for Exposures",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "is_a": "Category",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldExposures",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/Exposures",
       "@type": "ClassDefinition"
     },
     {
       "name": "ProximityToHazards",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldProximityToHazards",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/ProximityToHazards",
       "description": "proximally connected to",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3933,12 +3933,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldProximityToHazards",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/ProximityToHazards",
       "@type": "ClassDefinition"
     },
     {
       "name": "HouseholdExposures",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHouseholdExposures",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/HouseholdExposures",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3947,12 +3947,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldHouseholdExposures",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/HouseholdExposures",
       "@type": "ClassDefinition"
     },
     {
       "name": "PesticideHerbicideAndFungicideExposure",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPesticideHerbicideAndFungicideExposure",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/PesticideHerbicideAndFungicideExposure",
       "description": "pesticide",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3964,12 +3964,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldPesticideHerbicideAndFungicideExposure",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/PesticideHerbicideAndFungicideExposure",
       "@type": "ClassDefinition"
     },
     {
       "name": "RadonExposure",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadonExposure",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/RadonExposure",
       "description": "radon(0)",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3981,12 +3981,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldRadonExposure",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/RadonExposure",
       "@type": "ClassDefinition"
     },
     {
       "name": "LeadExposure",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLeadExposure",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/LeadExposure",
       "description": "lead(2+)",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -3998,12 +3998,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldLeadExposure",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/LeadExposure",
       "@type": "ClassDefinition"
     },
     {
       "name": "CarbonMonoxidePoisoning",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCarbonMonoxidePoisoning",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/CarbonMonoxidePoisoning",
       "description": "carbon monoxide poisoning",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -4015,12 +4015,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldCarbonMonoxidePoisoning",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/CarbonMonoxidePoisoning",
       "@type": "ClassDefinition"
     },
     {
       "name": "FoodBasedExposures",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFoodBasedExposures",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/FoodBasedExposures",
       "description": "not found",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -4029,12 +4029,12 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldFoodBasedExposures",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/FoodBasedExposures",
       "@type": "ClassDefinition"
     },
     {
       "name": "EnvironmentalExposures",
-      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEnvironmentalExposures",
+      "definition_uri": "https://NIEHS.github.io/HEW_Measures/dist/EnvironmentalExposures",
       "description": "exposure to environmental material",
       "from_schema": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
       "aliases": [
@@ -4046,15 +4046,15 @@
       ],
       "is_a": "Exposures",
       "slot_usage": {},
-      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonldEnvironmentalExposures",
+      "class_uri": "https://NIEHS.github.io/HEW_Measures/dist/EnvironmentalExposures",
       "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.11.0",
   "source_file": "HewMeasures.yaml",
-  "source_file_date": "2026-10-08T18:25:26",
-  "source_file_size": 39704,
-  "generation_date": "2026-10-08T18:25:51",
+  "source_file_date": "2026-10-08T19:14:58",
+  "source_file_size": 39685,
+  "generation_date": "2026-10-08T19:15:20",
   "@type": "SchemaDefinition",
   "@context": [
     "https://w3id.org/linkml/meta.context.jsonld",
@@ -4154,13 +4154,10 @@
         "@id": "http://obolibrary.org_",
         "@prefix": true
       },
-      "vocab": {
-        "@id": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld",
-        "@prefix": true
-      }
+      "vocab": "https://NIEHS.github.io/HEW_Measures/dist/"
     },
     {
-      "@base": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld"
+      "@base": "https://NIEHS.github.io/HEW_Measures/dist/"
     }
   ]
 }
