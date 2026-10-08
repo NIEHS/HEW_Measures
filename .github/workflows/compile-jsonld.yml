@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - 'data/HewMeasures.yaml'  # Triggers when your core vocabulary file changes
+    types:
+      - closed
   push:
     branches:
       - main
