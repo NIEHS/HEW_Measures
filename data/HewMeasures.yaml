@@ -1,6 +1,6 @@
 id: https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld
 name: hew_measures_vocabulary
-version: 1.0.2x
+version: 1.0.2xx
 prefixes:
   mesh: http://nih.gov
   uberon: http://obolibrary.org_
