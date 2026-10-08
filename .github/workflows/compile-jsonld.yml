@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'HewMeasures.yaml'  # Triggers when your core vocabulary file changes
+      - 'data/HewMeasures.yaml'  # Triggers when your core vocabulary file changes
   workflow_dispatch:        # Allows manual triggering from the GitHub UI
 
 jobs:
@@ -46,7 +46,7 @@ jobs:
     - name: Generate HTML Documentation
       run: |
         # gen-doc builds markdown files out of your LinkML schema structure
-        gen-doc --directory docs_markdown HewMeasures.yaml
+        gen-doc --directory docs_markdown data/HewMeasures.yaml
         
         # mkdocs compiles those markdown files into clean, styled static HTML files
         cd docs_markdown
