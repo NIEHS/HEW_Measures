@@ -58,7 +58,7 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
             "pato": "http://obolibrary.org_",
             "envo": "http://obolibrary.org_",
             "snomed": "http://snomed.info",
-            "vocab": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld"
+            "vocab": "https://NIEHS.github.io/HEW_Measures/dist/"
         },
         "default_prefix": "vocab",
         "default_range": "string",
