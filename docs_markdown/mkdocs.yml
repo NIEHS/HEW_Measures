@@ -1,0 +1,5 @@
+site_name: "HewMeasures Vocabulary Documentation"
+theme:
+  name: "material"
+plugins:
+  - search

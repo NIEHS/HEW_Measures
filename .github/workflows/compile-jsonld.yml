@@ -47,8 +47,8 @@ jobs:
     # Step 5: Convert YAML to JSON-LD
     - name: Generate JSON-LD Artifacts
       run: |
-        gen-jsonld HewMeasures.yaml > dist/hew_measures.jsonld
-        gen-jsonld-context HewMeasures.yaml > dist/hew_measures_context.jsonld
+        gen-jsonld data/HewMeasures.yaml > dist/hew_measures.jsonld
+        gen-jsonld-context data/HewMeasures.yaml > dist/hew_measures_context.jsonld
       shell: bash
 
     # Step 6: Generate Static HTML Documentation Site
@@ -76,7 +76,7 @@ jobs:
           echo "No structural vocabulary updates detected."
         else
           git commit -m "chore: auto-generate JSON-LD and HTML documentation [skip ci]"
-          git push origin main
+          git push origin HEAD:${{ github.ref_name }}
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
