@@ -6,6 +6,12 @@ on:
       - main
     paths:
       - 'data/HewMeasures.yaml'  # Triggers when your core vocabulary file changes
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'data/HewMeasures.yaml'  # Triggers when your core vocabulary file changes
   workflow_dispatch:        # Allows manual triggering from the GitHub UI
 
 jobs:
