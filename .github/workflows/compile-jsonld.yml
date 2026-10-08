@@ -51,22 +51,13 @@ jobs:
         gen-jsonld-context data/HewMeasures.yaml > dist/hew_measures_context.jsonld
       shell: bash
 
-         # Step 6: Generate Static HTML Documentation Site
+    # Step 6: Generate Static HTML Documentation Site
     - name: Generate HTML Documentation
       run: |
-        # 1. Have LinkML generate the raw Markdown files into the target folder
+        # gen-doc builds markdown files out of your LinkML schema structure
         gen-doc --directory docs_markdown data/HewMeasures.yaml
         
-        # 2. Write the required mkdocs.yml file dynamically inside that directory
-        cat <<EOF > docs_markdown/mkdocs.yml
-site_name: "HewMeasures Vocabulary Documentation"
-theme:
-  name: "material"
-plugins:
-  - search
-EOF
-        
-        # 3. Change directories and compile the markdown collection into static HTML
+        # mkdocs compiles those markdown files into clean, styled static HTML files
         cd docs_markdown
         mkdocs build --site-dir ../docs_html
       shell: bash
