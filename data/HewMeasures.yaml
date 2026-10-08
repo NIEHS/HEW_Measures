@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 id: https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld
 name: hew_measures_vocabulary
 version: 1.0.2
+=======
+id: http://niehs.nih.org/hew
+name: hew_measures_vocabulary
+version: 1.0.0
+>>>>>>> 941f30d (adding csv to yaml script)
 prefixes:
   mesh: http://nih.gov
   uberon: http://obolibrary.org_
@@ -14,7 +20,11 @@ prefixes:
   pato: http://obolibrary.org_
   envo: http://obolibrary.org_
   snomed: http://snomed.info
+<<<<<<< HEAD
   vocab: https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld
+=======
+  vocab: http://example.org
+>>>>>>> 941f30d (adding csv to yaml script)
 default_prefix: vocab
 default_range: string
 classes:
