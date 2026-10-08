@@ -14,6 +14,7 @@ on:
       - develop
     paths:
       - 'data/HewMeasures.yaml'  # Triggers when your core vocabulary file changes
+
   workflow_dispatch:        # Allows manual triggering from the GitHub UI
 
 jobs:
