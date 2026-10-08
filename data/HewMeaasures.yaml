@@ -1,4 +1,4 @@
-id: http://niehs.nih.org/hew
+id: https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld
 name: hew_measures_vocabulary
 version: 1.0.0
 prefixes:
@@ -14,7 +14,7 @@ prefixes:
   pato: http://obolibrary.org_
   envo: http://obolibrary.org_
   snomed: http://snomed.info
-  vocab: http://example.org
+  vocab: https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld
 default_prefix: vocab
 default_range: string
 classes:

@@ -42,7 +42,7 @@ def parse_ontology_ids(row):
 def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
     # Initialize the base LinkML structure
     linkml_dict = {
-        "id": "http://niehs.nih.org/hew",
+        "id": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
         "name": "hew_measures_vocabulary",
         "version": "1.0.0",
         "prefixes": {
@@ -58,7 +58,7 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
             "pato": "http://obolibrary.org_",
             "envo": "http://obolibrary.org_",
             "snomed": "http://snomed.info",
-            "vocab": "http://example.org"
+            "vocab": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld"
         },
         "default_prefix": "vocab",
         "default_range": "string",

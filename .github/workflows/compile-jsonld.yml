@@ -1,0 +1,73 @@
+name: Compile LinkML Schema to JSON-LD and HTML Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'HewMeasures.yaml'  # Triggers when your core vocabulary file changes
+  workflow_dispatch:        # Allows manual triggering from the GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository code
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # Step 2: Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    # Step 3: Install LinkML and documentation generator dependencies
+    - name: Install LinkML Framework & MkDocs
+      run: |
+        python -m pip install --upgrade pip
+        pip install linkml mkdocs-material
+
+    # Step 4: Ensure target artifact directories exist
+    - name: Prepare Directories
+      run: |
+        mkdir -p dist
+        mkdir -p docs_html
+
+    # Step 5: Convert YAML to JSON-LD
+    - name: Generate JSON-LD Artifacts
+      run: |
+        gen-jsonld HewMeasures.yaml > dist/hew_measures.jsonld
+        gen-jsonld-context HewMeasures.yaml > dist/hew_measures_context.jsonld
+      shell: bash
+
+    # Step 6: Generate Static HTML Documentation Site
+    - name: Generate HTML Documentation
+      run: |
+        # gen-doc builds markdown files out of your LinkML schema structure
+        gen-doc --directory docs_markdown HewMeasures.yaml
+        
+        # mkdocs compiles those markdown files into clean, styled static HTML files
+        cd docs_markdown
+        mkdocs build --site-dir ../docs_html
+      shell: bash
+
+    # Step 7: Commit and push the generated files back to GitHub
+    - name: Commit Artifacts
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action Bot"
+        
+        # Track both data artifacts and web pages
+        git add dist/docs_html/
+        git add dist/hew_measures.jsonld dist/hew_measures_context.jsonld
+        
+        if git diff --cached --quiet; then
+          echo "No structural vocabulary updates detected."
+        else
+          git commit -m "chore: auto-generate JSON-LD and HTML documentation [skip ci]"
+          git push origin main
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
