@@ -1,7 +1,6 @@
 id: http://niehs.nih.org/hew
 name: hew_measures_vocabulary
-version: 1.0.0
->>>>>>> 941f30d (adding csv to yaml script)
+version: 1.0.1
 prefixes:
   mesh: http://nih.gov
   uberon: http://obolibrary.org_
