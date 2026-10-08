@@ -1,6 +1,6 @@
 id: http://niehs.nih.org/hew
 name: hew_measures_vocabulary
-version: 1.0.1
+version: 1.0.2
 prefixes:
   mesh: http://nih.gov
   uberon: http://obolibrary.org_
