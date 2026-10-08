@@ -1,0 +1,1823 @@
+id: http://niehs.nih.org/hew
+name: hew_measures_vocabulary
+version: 1.0.0
+prefixes:
+  mesh: http://nih.gov
+  uberon: http://obolibrary.org_
+  mondo: http://obolibrary.org_
+  chebi: http://obolibrary.org_
+  ncit: http://obolibrary.org_
+  hp: http://obolibrary.org_
+  ecto: http://obolibrary.org_
+  vo: http://obolibrary.org_
+  scdo: http://obolibrary.org_
+  pato: http://obolibrary.org_
+  envo: http://obolibrary.org_
+  snomed: http://snomed.info
+  vocab: http://example.org
+default_prefix: vocab
+default_range: string
+classes:
+  Category:
+    abstract: true
+    description: Root abstraction for all vocabulary domains.
+  Health:
+    is_a: Category
+    description: Root domain for Health
+  HealthData:
+    is_a: Health
+    description: 'Subcategory: Health Data'
+  ClaimsData:
+    is_a: HealthData
+    aliases:
+    - Claims Data
+    - administrative claims, healthcare
+    description: administrative claims, healthcare
+    exact_mappings:
+    - mesh:D000067575
+  ElectronicHealthRecords:
+    is_a: HealthData
+    aliases:
+    - Electronic Health Records
+    - electronic health records
+    description: electronic health records
+    exact_mappings:
+    - mesh:D057286
+  HealthSurveyData:
+    is_a: HealthData
+    aliases:
+    - Health Survey Data
+    - health surveys
+    description: health surveys
+    exact_mappings:
+    - mesh:D006306
+  MensHealth:
+    is_a: HealthData
+    aliases:
+    - Mens Health
+    - men's health
+    description: men's health
+    exact_mappings:
+    - mesh:D054526
+  WomensHealth:
+    is_a: HealthData
+    aliases:
+    - Womens Health
+    - women's health
+    description: women's health
+    exact_mappings:
+    - mesh:D016387
+  OccupationalHealth:
+    is_a: HealthData
+    aliases:
+    - Occupational Health
+    - occupational health
+    description: occupational health
+    exact_mappings:
+    - mesh:D016272
+  Nutrition:
+    is_a: HealthData
+    aliases:
+    - Nutrition
+    - nutrition survey
+    description: nutrition survey
+    exact_mappings:
+    - mesh:D009749
+  PhysicalFitness:
+    is_a: HealthData
+    aliases:
+    - Physical Fitness
+    - physical fitness
+    description: physical fitness
+    exact_mappings:
+    - mesh:D010809
+  HealthBehavior:
+    is_a: HealthData
+    aliases:
+    - Health Behavior
+    - health behavior
+    description: health behavior
+    exact_mappings:
+    - mesh:D015438
+  ChildHealth:
+    is_a: HealthData
+    aliases:
+    - Child Health
+    - child health
+    description: child health
+    exact_mappings:
+    - mesh:D000067576
+  AdolescentHealth:
+    is_a: HealthData
+    aliases:
+    - Adolescent Health
+    - adolescent health
+    description: adolescent health
+    exact_mappings:
+    - mesh:D000067697
+  ReproductiveBirth:
+    is_a: HealthData
+    aliases:
+    - Reproductive/Birth
+    - reproductive history
+    description: reproductive history
+    exact_mappings:
+    - mesh:D017584
+  HealthIndicators:
+    is_a: HealthData
+    aliases:
+    - Health Indicators
+    - health status indicators
+    description: health status indicators
+    exact_mappings:
+    - mesh:D006305
+  GeriatricHealth:
+    is_a: HealthData
+    aliases:
+    - Geriatric Health
+    - healthy aging
+    description: healthy aging
+    exact_mappings:
+    - mesh:D000073656
+  OrthopedicHealth:
+    is_a: HealthData
+    aliases:
+    - Orthopedic Health
+    - not found
+    description: not found
+  MaternalAndChildHealth:
+    is_a: HealthData
+    aliases:
+    - Maternal and Child Health
+    - maternal health
+    description: maternal health
+    exact_mappings:
+    - mesh:D000068097
+  MedicationAdherence:
+    is_a: HealthData
+    aliases:
+    - Medication Adherence
+    - medication adherance
+    description: medication adherance
+    exact_mappings:
+    - mesh:D055118
+  DevelopmentalHealth:
+    is_a: HealthData
+    aliases:
+    - Developmental Health
+    - developmental origins of health and disease
+    description: developmental origins of health and disease
+    exact_mappings:
+    - mesh:D000098845
+  PatientReportedOutcomes:
+    is_a: HealthData
+    aliases:
+    - Patient-Reported Outcomes
+    - patient reported outcome measures
+    description: patient reported outcome measures
+    exact_mappings:
+    - mesh:D000071066
+  Immunization:
+    is_a: HealthData
+    aliases:
+    - Immunization
+    - immunization
+    description: immunization
+    exact_mappings:
+    - mesh:D007114
+  RadiationTherapy:
+    is_a: HealthData
+    aliases:
+    - Radiation Therapy
+    - radiotherapy
+    description: radiotherapy
+    exact_mappings:
+    - mesh:D011878
+  DiseaseRisk:
+    is_a: HealthData
+    aliases:
+    - Disease Risk
+    - risk factors
+    description: risk factors
+    exact_mappings:
+    - mesh:D012307
+  Disability:
+    is_a: HealthData
+    aliases:
+    - Disability
+    - persons with disabilities
+    description: persons with disabilities
+    exact_mappings:
+    - mesh:D006233
+  Fertility:
+    is_a: HealthData
+    aliases:
+    - Fertility
+    - fertility
+    description: fertility
+    exact_mappings:
+    - mesh:D005298
+  Genetics:
+    is_a: HealthData
+    aliases:
+    - Genetics
+    - genetics
+    description: genetics
+    exact_mappings:
+    - mesh:D005823
+  Metabolomics:
+    is_a: HealthData
+    aliases:
+    - Metabolomics
+    - metabolomics
+    description: metabolomics
+    exact_mappings:
+    - mesh:D005823
+  ClinicalChemistry:
+    is_a: HealthData
+    aliases:
+    - Clinical Chemistry
+    - clinical chemistry tests
+    description: clinical chemistry tests
+    exact_mappings:
+    - mesh:D005823
+  WellBeing:
+    is_a: HealthData
+    aliases:
+    - Well-Being
+    description: Local concept term for Well-Being
+  HealthPopulation:
+    is_a: Health
+    description: 'Subcategory: Health Population'
+  GeneralPopulation:
+    is_a: HealthPopulation
+    aliases:
+    - General Population
+    - population
+    description: population
+    exact_mappings:
+    - mesh:D011153
+  Inpatient:
+    is_a: HealthPopulation
+    aliases:
+    - Inpatient
+    - inpatients
+    description: inpatients
+    exact_mappings:
+    - mesh:D011153
+  Readmissions:
+    is_a: HealthPopulation
+    aliases:
+    - Readmissions
+    - patient readmission
+    description: patient readmission
+    exact_mappings:
+    - mesh:D010359
+  Outpatient:
+    is_a: HealthPopulation
+    aliases:
+    - Outpatient
+    - outpatients
+    description: outpatients
+    exact_mappings:
+    - mesh:D010045
+  EmergencyCare:
+    is_a: HealthPopulation
+    aliases:
+    - Emergency Care
+    - emergency medical services
+    description: emergency medical services
+    exact_mappings:
+    - mesh:D004632
+  IndigenousPeople:
+    is_a: HealthPopulation
+    aliases:
+    - Indigenous People
+    - indigenous peoples
+    description: indigenous peoples
+    exact_mappings:
+    - mesh:D000081034
+  PopulationsOfConcern:
+    is_a: HealthPopulation
+    aliases:
+    - Populations of Concern
+    - not found
+    description: not found
+  HealthSystem:
+    is_a: Health
+    description: 'Subcategory: Health System'
+  HealthCareProviderCharacteristics:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Provider Characteristics
+    - health personnel
+    description: health personnel
+    exact_mappings:
+    - mesh:D006282
+  HealthCareFacilitiesCharacteristics:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Facilities Characteristics
+    - health facilities
+    description: health facilities
+    exact_mappings:
+    - mesh:D006268
+  HealthOutcomes:
+    is_a: HealthSystem
+    aliases:
+    - Health Outcomes
+    - patient outcome assessment
+    description: patient outcome assessment
+    exact_mappings:
+    - mesh:D063868
+  HealthCareQuality:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Quality
+    - quality of health care
+    description: quality of health care
+    exact_mappings:
+    - mesh:D011787
+  HealthCareIndicators:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Indicators
+    - quality indicators, health care
+    description: quality indicators, health care
+    exact_mappings:
+    - mesh:D019984
+  HealthPrevention:
+    is_a: HealthSystem
+    aliases:
+    - Health Prevention
+    - preventive health service
+    description: preventive health service
+    exact_mappings:
+    - mesh:D011314
+  HealthCareBenefits:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Benefits
+    - not found
+    description: not found
+  HealthCareReferrals:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Referrals
+    - referral and consultation
+    description: referral and consultation
+    exact_mappings:
+    - mesh:D012017
+  MedicalFinancialAssistance:
+    is_a: HealthSystem
+    aliases:
+    - Medical Financial Assistance
+    - public assistance
+    description: public assistance
+    exact_mappings:
+    - mesh:D011632
+  HealthCareUtilization:
+    is_a: HealthSystem
+    aliases:
+    - Health Care Utilization
+    - health service utilization
+    description: health service utilization
+    exact_mappings:
+    - SCDO:0000493
+  HealthEquity:
+    is_a: HealthSystem
+    aliases:
+    - Health Equity
+    - health equity
+    description: health equity
+    exact_mappings:
+    - mesh:D000069576
+  VaccineSafetyAndEffectiveness:
+    is_a: HealthSystem
+    aliases:
+    - Vaccine Safety and Effectiveness
+    - vaccine effectiveness rate
+    description: vaccine effectiveness rate
+    exact_mappings:
+    - VO:0000443
+  HealthCondition:
+    is_a: Health
+    description: 'Subcategory: Health Condition'
+  GeneralHealth:
+    is_a: HealthCondition
+    aliases:
+    - General Health
+    description: Local concept term for General Health
+  CardiovascularSystem:
+    is_a: HealthCondition
+    aliases:
+    - Cardiovascular System
+    - cardiovascular system
+    description: cardiovascular system
+    exact_mappings:
+    - UBERON:0004535
+  EndocrineSystem:
+    is_a: HealthCondition
+    aliases:
+    - Endocrine System
+    - endocrine system
+    description: endocrine system
+    exact_mappings:
+    - UBERON:0000949
+  GastrointestinalSystem:
+    is_a: HealthCondition
+    aliases:
+    - Gastrointestinal System
+    - digestive system
+    description: digestive system
+    exact_mappings:
+    - UBERON:0001007
+  HematopoieticSystem:
+    is_a: HealthCondition
+    aliases:
+    - Hematopoietic System
+    - hematopoietic system
+    description: hematopoietic system
+    exact_mappings:
+    - UBERON:0002390
+  ImmuneSystem:
+    is_a: HealthCondition
+    aliases:
+    - Immune System
+    - immune system
+    description: immune system
+    exact_mappings:
+    - UBERON:0002405
+  IntegumentarySystem:
+    is_a: HealthCondition
+    aliases:
+    - Integumentary System
+    - integumental system
+    description: integumental system
+    exact_mappings:
+    - UBERON:0002416
+  MusculoskeletalSystem:
+    is_a: HealthCondition
+    aliases:
+    - Musculoskeletal System
+    - musculoskeletal
+    description: musculoskeletal
+    exact_mappings:
+    - UBERON:0002204
+  ReproductiveSystem:
+    is_a: HealthCondition
+    aliases:
+    - Reproductive System
+    - reproductive system
+    description: reproductive system
+    exact_mappings:
+    - UBERON:0000990
+  RespiratorySystem:
+    is_a: HealthCondition
+    aliases:
+    - Respiratory System
+    - respiratory system
+    description: respiratory system
+    exact_mappings:
+    - UBERON:0001004
+  ThoracicSystem:
+    is_a: HealthCondition
+    aliases:
+    - Thoracic System
+    - not found
+    description: not found
+  UrinarySystem:
+    is_a: HealthCondition
+    aliases:
+    - Urinary System
+    - renal system
+    description: renal system
+    exact_mappings:
+    - UBERON:0001008
+  NervousSystem:
+    is_a: HealthCondition
+    aliases:
+    - Nervous System
+    - nervous system
+    description: nervous system
+    exact_mappings:
+    - UBERON:0001016
+  Injury:
+    is_a: HealthCondition
+    aliases:
+    - Injury
+    - injury
+    description: injury
+    exact_mappings:
+    - MONDO:0021178
+  InfectiousDisease:
+    is_a: HealthCondition
+    aliases:
+    - Infectious Disease
+    - infectious disease
+    description: infectious disease
+    exact_mappings:
+    - MONDO:0005550
+  Cancer:
+    is_a: HealthCondition
+    aliases:
+    - Cancer
+    - neoplasm
+    description: neoplasm
+    exact_mappings:
+    - HP:0002664
+  Asthma:
+    is_a: HealthCondition
+    aliases:
+    - Asthma
+    - asthma
+    description: asthma
+    exact_mappings:
+    - HP:0002099
+  MentalHealth:
+    is_a: HealthCondition
+    aliases:
+    - Mental Health
+    - mental health
+    description: mental health
+    exact_mappings:
+    - mesh:D008603
+  Diabetes:
+    is_a: HealthCondition
+    aliases:
+    - Diabetes
+    - diabetes mellitus
+    description: diabetes mellitus
+    exact_mappings:
+    - HP:0000819
+  Osteoporosis:
+    is_a: HealthCondition
+    aliases:
+    - Osteoporosis
+    - osteoporosis
+    description: osteoporosis
+    exact_mappings:
+    - HP:0000939
+  BirthDefect:
+    is_a: HealthCondition
+    aliases:
+    - Birth Defect
+    - congenital abnormalities
+    description: congenital abnormalities
+    exact_mappings:
+    - mesh:D000013
+  ChronicObstructivePulmonaryDiseaseCopd:
+    is_a: HealthCondition
+    aliases:
+    - Chronic Obstructive Pulmonary Disease (COPD)
+    - chronic pulmonary obstruction
+    description: chronic pulmonary obstruction
+    exact_mappings:
+    - HP:0006510
+  HeatRelatedIllnesses:
+    is_a: HealthCondition
+    aliases:
+    - Heat Related Illnesses
+    - heat related illness
+    description: heat related illness
+    exact_mappings:
+    - NCIT:C206556
+  HormoneDisorder:
+    is_a: HealthCondition
+    aliases:
+    - Hormone Disorder
+    - not found
+    description: not found
+  Stroke:
+    is_a: HealthCondition
+    aliases:
+    - Stroke
+    - stroke
+    description: stroke
+    exact_mappings:
+    - HP:0001297
+  KidneyDisease:
+    is_a: HealthCondition
+    aliases:
+    - Kidney Disease
+    - kidney disorder
+    description: kidney disorder
+    exact_mappings:
+    - MONDO:0005240
+  Obesity:
+    is_a: HealthCondition
+    aliases:
+    - Obesity
+    - obesity
+    description: obesity
+    exact_mappings:
+    - HP:0001513
+  DentalAndOralConditions:
+    is_a: HealthCondition
+    aliases:
+    - Dental and Oral Conditions
+    - dental disorder
+    description: dental disorder
+    exact_mappings:
+    - NCIT:C35077
+  Arthritis:
+    is_a: HealthCondition
+    aliases:
+    - Arthritis
+    - arthritis
+    description: arthritis
+    exact_mappings:
+    - HP:0001369
+  Covid19:
+    is_a: HealthCondition
+    aliases:
+    - COVID-19
+    - COVID-19
+    description: COVID-19
+    exact_mappings:
+    - mesh:D000086382
+  Death:
+    is_a: HealthCondition
+    aliases:
+    - Death
+    - death
+    description: death
+    exact_mappings:
+    - mesh:D003643
+  EyeAndVision:
+    is_a: HealthCondition
+    aliases:
+    - Eye and Vision
+    - eye disorder
+    description: eye disorder
+    exact_mappings:
+    - MONDO:0005328
+  AidsHiv:
+    is_a: HealthCondition
+    aliases:
+    - AIDS/HIV
+    - two terms
+    description: two terms
+  Tuberculosis:
+    is_a: HealthCondition
+    aliases:
+    - Tuberculosis
+    - tuberculosis
+    description: tuberculosis
+    exact_mappings:
+    - mesh:D014376
+  CommunicableDisease:
+    is_a: HealthCondition
+    aliases:
+    - Communicable Disease
+    - infectious disease
+    description: infectious disease
+  Anemia:
+    is_a: HealthCondition
+    aliases:
+    - Anemia
+    - anemia
+    description: anemia
+    exact_mappings:
+    - HP:0001903
+  HearingLoss:
+    is_a: HealthCondition
+    aliases:
+    - Hearing Loss
+    - hearing impairment
+    description: hearing impairment
+    exact_mappings:
+    - HP:0000365
+  Allergy:
+    is_a: HealthCondition
+    aliases:
+    - Allergy
+    - allergy
+    description: allergy
+    exact_mappings:
+    - HP:0012393
+  Anxiety:
+    is_a: HealthCondition
+    aliases:
+    - Anxiety
+    - anxiety
+    description: anxiety
+    exact_mappings:
+    - HP:0000739
+  Hypertension:
+    is_a: HealthCondition
+    aliases:
+    - Hypertension
+    - hypertension
+    description: hypertension
+    exact_mappings:
+    - HP:0000822
+  Environment:
+    is_a: Category
+    description: Root domain for Environment
+  RemoteSensing:
+    is_a: Environment
+    description: 'Subcategory: Remote Sensing'
+  NightimeImagery:
+    is_a: RemoteSensing
+    aliases:
+    - Nightime Imagery
+    description: Local concept term for Nightime Imagery
+  LandEnvironmentIndicators:
+    is_a: RemoteSensing
+    aliases:
+    - Land Environment Indicators
+    - environmental indicators
+    description: environmental indicators
+    exact_mappings:
+    - mesh:D000079264
+  InfraredRadiation:
+    is_a: RemoteSensing
+    aliases:
+    - Infrared Radiation
+    - infrared radiation
+    description: infrared radiation
+    exact_mappings:
+    - ENVO:21001214
+  LightAbsorptionScatter:
+    is_a: RemoteSensing
+    aliases:
+    - Light Absorption/Scatter
+    - two terms
+    description: two terms
+  SolarRadiation:
+    is_a: RemoteSensing
+    aliases:
+    - Solar Radiation
+    - solar radiation
+    description: solar radiation
+    exact_mappings:
+    - ENVO:01001862
+  UltravioletRadiation:
+    is_a: RemoteSensing
+    aliases:
+    - Ultraviolet Radiation
+    - ultraviolet radiation
+    description: ultraviolet radiation
+    exact_mappings:
+    - ENVO:21001216
+  Radiation:
+    is_a: RemoteSensing
+    aliases:
+    - Radiation
+    - radiation
+    description: radiation
+    exact_mappings:
+    - ENVO:01001023
+  Evaporation:
+    is_a: RemoteSensing
+    aliases:
+    - Evaporation
+    - evaporation
+    description: evaporation
+    exact_mappings:
+    - ENVO:02500034
+  RadiativeForcing:
+    is_a: RemoteSensing
+    aliases:
+    - Radiative Forcing
+    - not found
+    description: not found
+  AtmosphericStability:
+    is_a: RemoteSensing
+    aliases:
+    - Atmospheric Stability
+    - not found
+    description: not found
+  Land:
+    is_a: Environment
+    description: 'Subcategory: Land'
+  Vegetation:
+    is_a: Land
+    description: 'Nested Subcategory: Vegetation'
+  Biomass:
+    is_a: Vegetation
+    aliases:
+    - Biomass
+    - organic material
+    description: organic material
+    exact_mappings:
+    - ENVO:01000155
+  VegetationCover:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Cover
+    - vegetation layer
+    description: vegetation layer
+    exact_mappings:
+    - ENVO:01000355
+  VegetationType:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Type
+    - vegetation layer
+    description: vegetation layer
+    exact_mappings:
+    - ENVO:01000355
+  VegetationPhenology:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Phenology
+    - plant phenology trait
+    description: plant phenology trait
+    exact_mappings:
+    - PPO:0002000
+  VegetationStress:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Stress
+    - not found
+    description: not found
+  VegetationProductivity:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Productivity
+    - not found
+    description: not found
+  VegetationStructure:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Structure
+    - vegetation layer
+    description: vegetation layer
+    exact_mappings:
+    - ENVO:01000355
+  VegetationIndicators:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Indicators
+    - not found
+    description: not found
+  VegetationGreenness:
+    is_a: Vegetation
+    aliases:
+    - Vegetation Greenness
+    - vegetated area
+    description: vegetated area
+    exact_mappings:
+    - ENVO:01001305
+  CanopyCharacteristics:
+    is_a: Vegetation
+    aliases:
+    - Canopy Characteristics
+    - canopy
+    description: canopy
+    exact_mappings:
+    - ENVO:01001242
+  SolarInducedFluorescence:
+    is_a: Vegetation
+    aliases:
+    - Solar Induced Fluorescence
+    - not found
+    description: not found
+  LandSurface:
+    is_a: Land
+    description: 'Nested Subcategory: Land Surface'
+  Topography:
+    is_a: LandSurface
+    aliases:
+    - Topography
+    - not found
+    description: not found
+  SurfaceReflectance:
+    is_a: LandSurface
+    aliases:
+    - Surface Reflectance
+    - not found
+    description: not found
+  LandUse:
+    is_a: LandSurface
+    aliases:
+    - Land Use
+    - land use process
+    description: land use process
+    exact_mappings:
+    - ENVO:01001431
+  LandCover:
+    is_a: LandSurface
+    aliases:
+    - Land Cover
+    - vegetated area
+    description: vegetated area
+    exact_mappings:
+    - ENVO:01001305
+  LandSurfaceCharacteristics:
+    is_a: LandSurface
+    aliases:
+    - Land Surface Characteristics
+    - not found
+    description: not found
+  SoilMoisture:
+    is_a: LandSurface
+    aliases:
+    - Soil Moisture
+    - concentration of liquid water in soil
+    description: concentration of liquid water in soil
+    exact_mappings:
+    - ENVO:09000026
+  SoilTemperature:
+    is_a: LandSurface
+    aliases:
+    - Soil Temperature
+    - temperature of soil
+    description: temperature of soil
+    exact_mappings:
+    - ENVO:09200012
+  Water:
+    is_a: Environment
+    description: 'Subcategory: Water'
+  WaterQuality:
+    is_a: Water
+    description: 'Nested Subcategory: Water Quality'
+  ImpairedWater:
+    is_a: WaterQuality
+    aliases:
+    - Impaired Water
+    - water pollution
+    description: water pollution
+    exact_mappings:
+    - ENVO:02500039
+  DrinkingWater:
+    is_a: WaterQuality
+    aliases:
+    - Drinking Water
+    - drinking water
+    description: drinking water
+    exact_mappings:
+    - ENVO:00003064
+  WaterComposition:
+    is_a: WaterQuality
+    aliases:
+    - Water Composition
+    - composition of water
+    description: composition of water
+    exact_mappings:
+    - ENVO:09200017
+  WaterQualityIndicators:
+    is_a: WaterQuality
+    aliases:
+    - Water Quality Indicators
+    - water qulaity
+    description: water qulaity
+    exact_mappings:
+    - mesh:D060753
+  WasteWater:
+    is_a: WaterQuality
+    aliases:
+    - Waste Water
+    - waste water
+    description: waste water
+    exact_mappings:
+    - ENVO:00002001
+  WaterBodies:
+    is_a: Water
+    description: 'Nested Subcategory: Water Bodies'
+  SeaSurfaceTemperature:
+    is_a: WaterBodies
+    aliases:
+    - Sea Surface Temperature
+    - temperature of sea surface
+    description: temperature of sea surface
+    exact_mappings:
+    - ENVO:04000002
+  OceanColor:
+    is_a: WaterBodies
+    aliases:
+    - Ocean Color
+    - color
+    description: color
+    exact_mappings:
+    - PATO:0000014
+  SeaSurfaceSalinity:
+    is_a: WaterBodies
+    aliases:
+    - Sea Surface Salinity
+    - salinity
+    description: salinity
+    exact_mappings:
+    - PATO:0085001
+  Evapotranspiration:
+    is_a: WaterBodies
+    aliases:
+    - Evapotranspiration
+    - not found
+    description: not found
+  GroundWater:
+    is_a: WaterBodies
+    aliases:
+    - Ground Water
+    - ground water
+    description: ground water
+    exact_mappings:
+    - ENVO:00002041
+  SeaIce:
+    is_a: WaterBodies
+    aliases:
+    - Sea Ice
+    - sea ice
+    description: sea ice
+    exact_mappings:
+    - ENVO:00002200
+  Air:
+    is_a: Environment
+    description: 'Subcategory: Air'
+  AirQuality:
+    is_a: Air
+    description: 'Nested Subcategory: Air Quality'
+  Diesel:
+    is_a: AirQuality
+    aliases:
+    - Diesel
+    - diesel exhaust
+    description: diesel exhaust
+    exact_mappings:
+    - ENVO:03510008
+  Pm25:
+    is_a: AirQuality
+    aliases:
+    - PM2.5
+    - not separated
+    description: not separated
+  Pm10:
+    is_a: AirQuality
+    aliases:
+    - PM10
+    - not separated
+    description: not separated
+  ParticulateMatterPm25Pm10:
+    is_a: AirQuality
+    aliases:
+    - Particulate Matter (PM2.5, PM10)
+    - ultrafine respirable suspended particulate matter
+    description: ultrafine respirable suspended particulate matter
+    exact_mappings:
+    - ENVO:01000416
+  SulfurDioxideSo2:
+    is_a: AirQuality
+    aliases:
+    - Sulfur Dioxide (SO2)
+    - sulfur dioxide
+    description: sulfur dioxide
+    exact_mappings:
+    - CHEBI:18422
+  OzoneO3:
+    is_a: AirQuality
+    aliases:
+    - Ozone (O3)
+    - ozone
+    description: ozone
+    exact_mappings:
+    - CHEBI:25812
+  CarbonMonoxideCo:
+    is_a: AirQuality
+    aliases:
+    - Carbon Monoxide (CO)
+    - carbon monoxide
+    description: carbon monoxide
+    exact_mappings:
+    - CHEBI:17245
+  CarbonDioxideCo2:
+    is_a: AirQuality
+    aliases:
+    - Carbon Dioxide (CO2)
+    - carbon dioxide
+    description: carbon dioxide
+    exact_mappings:
+    - CHEBI:16526
+  AirQualityIndicators:
+    is_a: AirQuality
+    aliases:
+    - Air Quality Indicators
+    - not found - see EPA
+    description: not found - see EPA
+  AirPollutants:
+    is_a: AirQuality
+    aliases:
+    - Air Pollutants
+    - air pollution
+    description: air pollution
+    exact_mappings:
+    - ENVO:02500037
+  NitrogenDioxideNo2:
+    is_a: AirQuality
+    aliases:
+    - Nitrogen Dioxide (NO2)
+    - nitrogen dioxide
+    description: nitrogen dioxide
+    exact_mappings:
+    - CHEBI:33101
+  FormaldehydeHcho:
+    is_a: AirQuality
+    aliases:
+    - Formaldehyde (HCHO)
+    - formaldehyde
+    description: formaldehyde
+    exact_mappings:
+    - CHEBI:16842
+  Dust:
+    is_a: AirQuality
+    aliases:
+    - Dust
+    - dust
+    description: dust
+    exact_mappings:
+    - ENVO:00002008
+  AmmoniaNh3:
+    is_a: AirQuality
+    aliases:
+    - Ammonia (NH3)
+    - ammonia
+    description: ammonia
+    exact_mappings:
+    - CHEBI:16134
+  Aerosol:
+    is_a: AirQuality
+    aliases:
+    - Aerosol
+    - aerosol
+    description: aerosol
+    exact_mappings:
+    - ENVO:00010505
+  TraceGases:
+    is_a: AirQuality
+    aliases:
+    - Trace Gases
+    - not found
+    description: not found
+  VolatileOrganicCompoundsVoc:
+    is_a: AirQuality
+    aliases:
+    - Volatile Organic Compounds (VOC)
+    - volatile organic compound
+    description: volatile organic compound
+    exact_mappings:
+    - CHEBI:134179
+  Aeroallergens:
+    is_a: AirQuality
+    aliases:
+    - Aeroallergens
+    - not found
+    description: not found
+  BlackCarbon:
+    is_a: AirQuality
+    aliases:
+    - Black Carbon
+    - carbon black
+    description: carbon black
+    exact_mappings:
+    - CHEBI:82297
+  MethaneCh4:
+    is_a: AirQuality
+    aliases:
+    - Methane (CH4)
+    - methane
+    description: methane
+    exact_mappings:
+    - CHEBI:16183
+  NitrousOxideLaughingGasN2o:
+    is_a: AirQuality
+    aliases:
+    - Nitrous Oxide (laughing gas, N2O)
+    - nitrous oxide
+    description: nitrous oxide
+    exact_mappings:
+    - CHEBI:749671
+  WaterVapor:
+    is_a: AirQuality
+    aliases:
+    - Water Vapor
+    - water vapour
+    description: water vapour
+    exact_mappings:
+    - ENVO:01000266
+  ChlorofluorocarbonsCfc:
+    is_a: AirQuality
+    aliases:
+    - Chlorofluorocarbons (CFC)
+    - chlorofouorocarbon
+    description: chlorofouorocarbon
+    exact_mappings:
+    - CHEBI:134024
+  NitricOxideNo:
+    is_a: AirQuality
+    aliases:
+    - Nitric Oxide (NO)
+    - nitric oxide
+    description: nitric oxide
+    exact_mappings:
+    - CHEBI:16480
+  Wildfire:
+    is_a: Environment
+    description: 'Subcategory: Wildfire'
+  WildfireCharacteristics:
+    is_a: Wildfire
+    description: 'Nested Subcategory: Wildfire Characteristics'
+  FireArea:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Area
+    - area
+    description: area
+    exact_mappings:
+    - NCIT:C25244
+  FireLocation:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Location
+    - not found
+    description: not found
+  BurnSeverity:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Burn Severity
+    - not found
+    description: not found
+  FirePerimeter:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Perimeter
+    - perimeter
+    description: perimeter
+    exact_mappings:
+    - PATO:0001711
+  FireType:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Type
+    - land fire
+    description: land fire
+    exact_mappings:
+    - ENVO:01001292
+  FireHotspot:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Hotspot
+    - not found
+    description: not found
+  FireEmission:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Emission
+    - not found
+    description: not found
+  FireFuel:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Fuel
+    - fuel
+    description: fuel
+    exact_mappings:
+    - CHEBI:33292
+  FireSmoke:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Smoke
+    - smoke
+    description: smoke
+    exact_mappings:
+    - ENVO:01000838
+  FireDetail:
+    is_a: WildfireCharacteristics
+    aliases:
+    - Fire Detail
+    - not found
+    description: not found
+  WildfireManagement:
+    is_a: Wildfire
+    description: 'Nested Subcategory: Wildfire Management'
+  FireDeathAndInjury:
+    is_a: WildfireManagement
+    aliases:
+    - Fire Death and Injury
+    - death by fire (event)
+    description: death by fire (event)
+    exact_mappings:
+    - SNOMED:67786008
+  FireDamage:
+    is_a: WildfireManagement
+    aliases:
+    - Fire Damage
+    - not found
+    description: not found
+  FireSuppression:
+    is_a: WildfireManagement
+    aliases:
+    - Fire Suppression
+    - not found
+    description: not found
+  FireForecasting:
+    is_a: WildfireManagement
+    aliases:
+    - Fire Forecasting
+    - not found
+    description: not found
+  FireManagement:
+    is_a: WildfireManagement
+    aliases:
+    - Fire Management
+    - planned burn
+    description: planned burn
+    exact_mappings:
+    - ENVO:03000122
+  Weather:
+    is_a: Environment
+    description: 'Subcategory: Weather'
+  Drought:
+    is_a: Weather
+    aliases:
+    - Drought
+    - drought
+    description: drought
+    exact_mappings:
+    - ENVO:1000745
+  Heat:
+    is_a: Weather
+    aliases:
+    - Heat
+    - not found
+    description: not found
+  Precipitation:
+    is_a: Weather
+    aliases:
+    - Precipitation
+    - hydrological precipitation process
+    description: hydrological precipitation process
+    exact_mappings:
+    - ENVO:01000703
+  Temperature:
+    is_a: Weather
+    aliases:
+    - Temperature
+    - temperature
+    description: temperature
+    exact_mappings:
+    - PATO:0000146
+  Flooding:
+    is_a: Weather
+    aliases:
+    - Flooding
+    - flood
+    description: flood
+    exact_mappings:
+    - ENVO:01000710
+  Hurricanes:
+    is_a: Weather
+    aliases:
+    - Hurricanes
+    - cyclone
+    description: cyclone
+    exact_mappings:
+    - ENVO:01001297
+  Tornados:
+    is_a: Weather
+    aliases:
+    - Tornados
+    - tornado
+    description: tornado
+    exact_mappings:
+    - ENVO:01001482
+  Wildfires:
+    is_a: Weather
+    aliases:
+    - Wildfires
+    - wildfire
+    description: wildfire
+    exact_mappings:
+    - ENVO:01000787
+  Humidity:
+    is_a: Weather
+    aliases:
+    - Humidity
+    - humidity
+    description: humidity
+    exact_mappings:
+    - PATO:0015009
+  Winds:
+    is_a: Weather
+    aliases:
+    - Winds
+    - atmospheric wind
+    description: atmospheric wind
+    exact_mappings:
+    - ENVO:01000793
+  Clouds:
+    is_a: Weather
+    aliases:
+    - Clouds
+    - cloud
+    description: cloud
+    exact_mappings:
+    - ENVO:01000760
+  UvRadiation:
+    is_a: Weather
+    aliases:
+    - UV Radiation
+    description: Local concept term for UV Radiation
+  Lightning:
+    is_a: Weather
+    aliases:
+    - Lightning
+    - atmospheric lightning
+    description: atmospheric lightning
+    exact_mappings:
+    - ENVO:01000898
+  Snow:
+    is_a: Weather
+    aliases:
+    - Snow
+    - snow
+    description: snow
+    exact_mappings:
+    - ENVO:01000406
+  Sunlight:
+    is_a: Weather
+    aliases:
+    - Sunlight
+    - solar radiation
+    description: solar radiation
+    exact_mappings:
+    - ENVO:01001862
+  BarometricPressure:
+    is_a: Weather
+    aliases:
+    - Barometric Pressure
+    - pressure of air
+    description: pressure of air
+    exact_mappings:
+    - ENVO:09200011
+  DewPoint:
+    is_a: Weather
+    aliases:
+    - Dew Point
+    - dew point
+    description: dew point
+    exact_mappings:
+    - ENVO:01001859
+  Visibility:
+    is_a: Weather
+    aliases:
+    - Visibility
+    - atmospheric aerosol
+    description: atmospheric aerosol
+    exact_mappings:
+    - ENVO:01001652
+  Monsoon:
+    is_a: Weather
+    aliases:
+    - Monsoon
+    - monsoon wind
+    description: monsoon wind
+    exact_mappings:
+    - ENVO:03000130
+  Social:
+    is_a: Category
+    description: Root domain for Social
+  SocialContext:
+    is_a: Social
+    description: 'Subcategory: Social Context'
+  Demographics:
+    is_a: SocialContext
+    aliases:
+    - Demographics
+    - demographic
+    description: demographic
+    exact_mappings:
+    - mesh:D003710
+  Immigration:
+    is_a: SocialContext
+    aliases:
+    - Immigration
+    - emigration and immigration
+    description: emigration and immigration
+    exact_mappings:
+    - mesh:D004641
+  LivingConditions:
+    is_a: SocialContext
+    aliases:
+    - Living Conditions
+    - home environment
+    description: home environment
+    exact_mappings:
+    - mesh:D004641
+  SocioeconomicIndicators:
+    is_a: SocialContext
+    aliases:
+    - Socioeconomic Indicators
+    - socioeconomic factors
+    description: socioeconomic factors
+    exact_mappings:
+    - mesh:D012959
+  Segregation:
+    is_a: SocialContext
+    aliases:
+    - Segregation
+    - social segregation
+    description: social segregation
+    exact_mappings:
+    - mesh:D012959
+  Traffic:
+    is_a: SocialContext
+    aliases:
+    - Traffic
+    - not found
+    description: not found
+  EnvironmentalJusticeIndicators:
+    is_a: SocialContext
+    aliases:
+    - Environmental Justice Indicators
+    - environmental justice
+    description: environmental justice
+    exact_mappings:
+    - mesh:D000091383
+  SocialVulnerabilityIndicators:
+    is_a: SocialContext
+    aliases:
+    - Social Vulnerability Indicators
+    - social vulnerability
+    description: social vulnerability
+    exact_mappings:
+    - mesh:D000091482
+  RuralUrban:
+    is_a: SocialContext
+    aliases:
+    - Rural/Urban
+    - urbanization
+    description: urbanization
+    exact_mappings:
+    - mesh:D014507
+  Economic:
+    is_a: Social
+    description: 'Subcategory: Economic'
+  Income:
+    is_a: Economic
+    aliases:
+    - Income
+    - income
+    description: income
+    exact_mappings:
+    - mesh:D007182
+  Employment:
+    is_a: Economic
+    aliases:
+    - Employment
+    - employment
+    description: employment
+    exact_mappings:
+    - mesh:D004651
+  Poverty:
+    is_a: Economic
+    aliases:
+    - Poverty
+    - poverty
+    description: poverty
+    exact_mappings:
+    - mesh:D011203
+  OccupationAndIndustry:
+    is_a: Economic
+    aliases:
+    - Occupation and Industry
+    - technology, industry and agriculture
+    description: technology, industry and agriculture
+    exact_mappings:
+    - http://purl.obolibrary.org/obo/mesh#J
+  Education:
+    is_a: Social
+    description: 'Subcategory: Education'
+  ProximityToSchool:
+    is_a: Education
+    aliases:
+    - Proximity to School
+    - not found
+    description: not found
+  EducationAttainment:
+    is_a: Education
+    aliases:
+    - Education Attainment
+    - education level
+    description: education level
+    exact_mappings:
+    - NCIT:C17953
+  SchoolSystem:
+    is_a: Education
+    aliases:
+    - School System
+    - not found
+    description: not found
+  EducationalFunding:
+    is_a: Education
+    aliases:
+    - Educational Funding
+    - not found
+    description: not found
+  Literacy:
+    is_a: Education
+    aliases:
+    - Literacy
+    - literacy
+    description: literacy
+    exact_mappings:
+    - GSSO:010553
+  Numeracy:
+    is_a: Education
+    aliases:
+    - Numeracy
+    - quantitative literacy
+    description: quantitative literacy
+    exact_mappings:
+    - GSSO:010556
+  PhysicalInfrastructure:
+    is_a: Social
+    description: 'Subcategory: Physical Infrastructure'
+  Housing:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Housing
+    - housing
+    description: housing
+    exact_mappings:
+    - mesh:D006798
+  Internet:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Internet
+    - internet
+    description: internet
+    exact_mappings:
+    - mesh:D020407
+  SocialServices:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Social Services
+    - social work
+    description: social work
+    exact_mappings:
+    - mesh:D012947
+  FoodAccess:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Food Access
+    - access to healthy foods
+    description: access to healthy foods
+    exact_mappings:
+    - mesh:D000091483
+  AccessToExercise:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Access to Exercise
+    - exercise
+    description: exercise
+    exact_mappings:
+    - mesh:D015444
+  Migration:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Migration
+    - human migration
+    description: human migration
+    exact_mappings:
+    - mesh:D063426
+  Crime:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Crime
+    - crime
+    description: crime
+    exact_mappings:
+    - mesh:D003415
+  IndustryComposition:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Industry Composition
+    - industry
+    description: industry
+    exact_mappings:
+    - mesh:D007221
+  Transportation:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Transportation
+    - transportation
+    description: transportation
+    exact_mappings:
+    - mesh:D014186
+  Walkability:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Walkability
+    - perceived walkability of neighborhood (observable entity)
+    description: perceived walkability of neighborhood (observable entity)
+    exact_mappings:
+    - SNOMED:1220610008
+  BuiltEnvironmentIndicators:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Built Environment Indicators
+    - not found
+    description: not found
+  BuiltEnvironment:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Built Environment
+    - built environment
+    description: built environment
+    exact_mappings:
+    - mesh:D000076624
+  GreenSpace:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Green Space
+    - parks, recreational
+    description: parks, recreational
+    exact_mappings:
+    - mesh:D000068316
+  Commute:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Commute
+    - commute
+    description: commute
+    exact_mappings:
+    - NCIT:C141285
+  HealthcareAccess:
+    is_a: Social
+    description: 'Subcategory: Healthcare Access'
+  HealthInsurance:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Health Insurance
+    - insurance, health
+    description: insurance, health
+    exact_mappings:
+    - mesh:D007348
+  DistanceToProvider:
+    is_a: PhysicalInfrastructure
+    aliases:
+    - Distance to Provider
+    - not found
+    description: not found
+  Exposures:
+    is_a: Category
+    description: Root domain for Exposures
+  ProximityToHazards:
+    is_a: Exposures
+    aliases:
+    - Proximity to Hazards
+    - proximally connected to
+    description: proximally connected to
+  HouseholdExposures:
+    is_a: Exposures
+    aliases:
+    - Household Exposures
+    - not found
+    description: not found
+  PesticideHerbicideAndFungicideExposure:
+    is_a: Exposures
+    aliases:
+    - Pesticide Herbicide and Fungicide Exposure
+    - pesticide
+    description: pesticide
+    exact_mappings:
+    - CHEBI:25944
+  RadonExposure:
+    is_a: Exposures
+    aliases:
+    - Radon Exposure
+    - radon(0)
+    description: radon(0)
+    exact_mappings:
+    - CHEBI:49997
+  LeadExposure:
+    is_a: Exposures
+    aliases:
+    - Lead Exposure
+    - lead(2+)
+    description: lead(2+)
+    exact_mappings:
+    - CHEBI:49807
+  CarbonMonoxidePoisoning:
+    is_a: Exposures
+    aliases:
+    - Carbon Monoxide Poisoning
+    - carbon monoxide poisoning
+    description: carbon monoxide poisoning
+    exact_mappings:
+    - MONDO:0800373
+  FoodBasedExposures:
+    is_a: Exposures
+    aliases:
+    - Food-based Exposures
+    - not found
+    description: not found
+  EnvironmentalExposures:
+    is_a: Exposures
+    aliases:
+    - Environmental Exposures
+    - exposure to environmental material
+    description: exposure to environmental material
+    exact_mappings:
+    - ECTO:0000015

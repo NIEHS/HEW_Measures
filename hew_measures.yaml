@@ -1,0 +1,120 @@
+id: http://example.org
+name: nexus_exposome_vocabulary
+version: "1.0.0"
+prefixes:
+  mesh: http://nih.gov
+  uberon: http://obolibrary.org_
+  mondo: http://obolibrary.org_
+  chebi: http://obolibrary.org_
+  ncit: http://obolibrary.org_
+  hp: http://obolibrary.org_
+  ecto: http://obolibrary.org_
+  vocab: http://example.org
+
+default_prefix: vocab
+default_range: string
+
+# ==============================================================================
+# Classes Definition (The Vocabulary Hierarchy)
+# ==============================================================================
+classes:
+  # --------------------------------============================================
+  # Level 1: Core Categories
+  # --------------------------------============================================
+  Category:
+    abstract: true
+    description: "Root abstraction for all data catalog domains."
+
+  Health:
+    is_a: Category
+    description: "Health-related metrics, populations, systems, and conditions."
+
+  Environment:
+    is_a: Category
+    description: "Environmental, land, air, weather, and remote sensing indicators."
+
+  Social:
+    is_a: Category
+    description: "Social context, demographics, economics, and education."
+
+  Exposures:
+    is_a: Category
+    description: "Environmental and household exposure variables."
+
+  # --------------------------------============================================
+  # Level 2 & 3: Subcategories (Grouped Contextually)
+  # --------------------------------============================================
+  HealthData:
+    is_a: Health
+    description: "Category: Health -> SubCategory: Health Data"
+
+  HealthCondition:
+    is_a: Health
+    description: "Category: Health -> SubCategory: Health Condition"
+
+  AirQuality:
+    is_a: Environment
+    description: "Category: Environment -> SubCategory: Air Quality"
+
+  WaterQuality:
+    is_a: Environment
+    description: "Category: Environment -> SubCategory: Water Quality"
+
+  Economic:
+    is_a: Social
+    description: "Category: Social -> SubCategory: Economic"
+
+  # --------------------------------============================================
+  # Level 4: Concrete Leaf Terms (Examples populated from source file)
+  # --------------------------------============================================
+  
+  # --- HEALTH DATA LEAF TERMS ---
+  ClaimsData:
+    is_a: HealthData
+    description: "Administrative claims, healthcare metrics."
+    aliases: ["Claims Data"]
+    exact_mappings:
+      - mesh:D000067575
+
+  WomensHealth:
+    is_a: HealthData
+    description: "Women's healthcare records and metrics."
+    aliases: ["Womens Health"]
+    exact_mappings:
+      - mesh:D016387
+
+  WellBeing:
+    is_a: HealthData
+    description: "General well-being indexes (No external ontology match)."
+    aliases: ["Well-Being"]
+
+  # --- HEALTH CONDITION LEAF TERMS ---
+  CardiovascularSystem:
+    is_a: HealthCondition
+    description: "Cardiovascular system anatomy and conditions."
+    aliases: ["Cardiovascular System"]
+    exact_mappings:
+      - uberon:0004535
+
+  Cancer:
+    is_a: HealthCondition
+    description: "Neoplasms and oncological conditions."
+    aliases: ["Cancer"]
+    exact_mappings:
+      - hp:0002664
+
+  # --- AIR QUALITY LEAF TERMS ---
+  Ozone:
+    is_a: AirQuality
+    description: "Ozone (O3) trace gas monitoring."
+    aliases: ["Ozone (O3)"]
+    exact_mappings:
+      - chebi:25812
+
+  # --- EXPOSURES LEAF TERMS ---
+  EnvironmentalExposures:
+    is_a: Exposures
+    description: "Exposure to environmental material."
+    aliases: ["Environmental Exposures"]
+    exact_mappings:
+      - ecto:0000015
