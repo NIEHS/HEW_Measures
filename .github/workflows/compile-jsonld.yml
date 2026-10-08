@@ -1,7 +1,7 @@
 name: Compile LinkML Schema to JSON-LD and HTML Docs
 
 on:
-  push:
+  pull_request:
     branches:
       - main
     paths:
