@@ -1,0 +1,7 @@
+site_name: HEW Measures Vocabulary Documentation
+docs_dir: dist/docs_markdown
+site_dir: dist/docs_html
+theme:
+  name: material
+plugins:
+  - search
