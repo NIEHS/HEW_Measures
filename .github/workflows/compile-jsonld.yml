@@ -57,6 +57,8 @@ jobs:
     # Step 6: Generate Static HTML Documentation Site
     - name: Generate HTML Documentation
       run: |
+        mkdir -p docs_markdown
+        mkdir -p docs_html
         # gen-doc builds markdown files out of your LinkML schema structure
         gen-doc --directory docs_markdown data/HewMeasures.yaml
         
