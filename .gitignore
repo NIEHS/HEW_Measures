@@ -221,4 +221,3 @@ __marimo__/
 .venv/
 ~$*
 .DS_Store
-dist
