@@ -57,14 +57,14 @@ jobs:
     # Step 6: Generate Static HTML Documentation Site
     - name: Generate HTML Documentation
       run: |
-        mkdir -p docs_markdown
-        mkdir -p docs_html
+        mkdir -p dist/docs_markdown
+        mkdir -p dist/docs_html
         # gen-doc builds markdown files out of your LinkML schema structure
-        gen-doc --directory docs_markdown data/HewMeasures.yaml
+        gen-doc --directory dist/docs_markdown data/HewMeasures.yaml
         
         # mkdocs compiles those markdown files into clean, styled static HTML files
-        cd docs_markdown
-        mkdocs build --site-dir ../docs_html
+        cd dist/docs_markdown
+        mkdocs build --site-dir ../dist/docs_html
       shell: bash
 
     # Step 7: Commit and push the generated files back to GitHub
