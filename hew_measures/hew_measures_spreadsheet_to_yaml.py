@@ -109,10 +109,6 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
             sub1_id = clean_id(sub1_raw)
             sub2_id = clean_id(sub2_raw)
             assigned_curie = f"HEWM:{row_number:07d}"
-<<<<<<< HEAD
-=======
-            class_name = f"HEWM{row_number:07d}"
->>>>>>> e4c7ae0 (nicos revisions)
 
             # 1. Establish Top Level Category (e.g., Health, Environment)
             if cat_id not in classes:
@@ -138,7 +134,6 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
                     }
                 current_parent = sub2_id
 
-<<<<<<< HEAD
             # 4. Create a stable enum value for the spreadsheet term.
             aliases = [term_raw]
             if row.get('ontology term'):
@@ -168,30 +163,6 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
                 permissible_value["exact_mappings"] = mappings
 
             permissible_values[assigned_curie] = permissible_value
-=======
-            # 4. Create Concrete Leaf Term, add ontology term as an alias
-            aliases = [term_raw]
-            if row.get('ontology term'):
-                aliases.append(row['ontology term'].strip())
-            class_entry = {
-                "class_uri": assigned_curie,
-                "is_a": current_parent,
-                "aliases": aliases
-            }
-
-            # Add human-focused descriptions if documented
-            if row.get('ontology term'):
-                class_entry["description"] = row['ontology term'].strip()
-            else:
-                class_entry["description"] = f"Local concept term for {term_raw}"
-
-            # Parse out mappings cleanly
-            mappings = parse_ontology_ids(row)
-            if mappings:
-                class_entry["exact_mappings"] = mappings
-
-            classes[class_name] = class_entry
->>>>>>> e4c7ae0 (nicos revisions)
 
     # Output the structured Python dictionary straight into pristine YAML format
     with open(yaml_outputpath, 'w', encoding='utf-8') as yf:
