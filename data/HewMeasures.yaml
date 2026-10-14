@@ -2,7 +2,6 @@ id: https://w3id.org/hew/measures/schema
 name: hew_measures_vocabulary
 version: 1.0.0
 prefixes:
-  HEWM: https://w3id.org/hew/measures/term/
   mesh: http://id.nlm.nih.gov/mesh/
   uberon: http://purl.obolibrary.org/obo/UBERON_
   mondo: http://purl.obolibrary.org/obo/MONDO_
@@ -15,8 +14,6 @@ prefixes:
   pato: http://purl.obolibrary.org/obo/PATO_
   envo: http://purl.obolibrary.org/obo/ENVO_
   snomed: http://purl.bioontology.org/ontology/SNOMEDCT/
-  gsso: http://purl.obolibrary.org/obo/GSSO_
-  ppo: http://purl.obolibrary.org/obo/PPO_
   vocab: https://w3id.org/hew/measures/
 default_prefix: vocab
 default_range: string

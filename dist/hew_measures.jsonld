@@ -1,0 +1,4155 @@
+{
+  "name": "hew_measures_vocabulary",
+  "id": "https://w3id.org/hew/measures/schema",
+  "version": "1.0.0",
+  "prefixes": [
+    {
+      "prefix_prefix": "mesh",
+      "prefix_reference": "http://id.nlm.nih.gov/mesh/"
+    },
+    {
+      "prefix_prefix": "uberon",
+      "prefix_reference": "http://purl.obolibrary.org/obo/UBERON_"
+    },
+    {
+      "prefix_prefix": "mondo",
+      "prefix_reference": "http://purl.obolibrary.org/obo/MONDO_"
+    },
+    {
+      "prefix_prefix": "chebi",
+      "prefix_reference": "http://purl.obolibrary.org/obo/CHEBI_"
+    },
+    {
+      "prefix_prefix": "ncit",
+      "prefix_reference": "http://purl.obolibrary.org/obo/NCIT_"
+    },
+    {
+      "prefix_prefix": "hp",
+      "prefix_reference": "http://purl.obolibrary.org/obo/HP_"
+    },
+    {
+      "prefix_prefix": "ecto",
+      "prefix_reference": "http://purl.obolibrary.org/obo/ECTO_"
+    },
+    {
+      "prefix_prefix": "vo",
+      "prefix_reference": "http://purl.obolibrary.org/obo/VO_"
+    },
+    {
+      "prefix_prefix": "scdo",
+      "prefix_reference": "http://purl.obolibrary.org/obo/SCDO_"
+    },
+    {
+      "prefix_prefix": "pato",
+      "prefix_reference": "http://purl.obolibrary.org/obo/PATO_"
+    },
+    {
+      "prefix_prefix": "envo",
+      "prefix_reference": "http://purl.obolibrary.org/obo/ENVO_"
+    },
+    {
+      "prefix_prefix": "snomed",
+      "prefix_reference": "http://purl.bioontology.org/ontology/SNOMEDCT/"
+    },
+    {
+      "prefix_prefix": "vocab",
+      "prefix_reference": "https://w3id.org/hew/measures/"
+    }
+  ],
+  "default_prefix": "vocab",
+  "default_range": "string",
+  "classes": [
+    {
+      "name": "Category",
+      "definition_uri": "https://w3id.org/hew/measures/Category",
+      "description": "Root abstraction for all vocabulary domains.",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "abstract": true,
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Category",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Health",
+      "definition_uri": "https://w3id.org/hew/measures/Health",
+      "description": "Root domain for Health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Category",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Health",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthData",
+      "definition_uri": "https://w3id.org/hew/measures/HealthData",
+      "description": "Subcategory: Health Data",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Health",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthData",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ClaimsData",
+      "definition_uri": "https://w3id.org/hew/measures/ClaimsData",
+      "description": "administrative claims, healthcare",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Claims Data",
+        "administrative claims, healthcare"
+      ],
+      "exact_mappings": [
+        "mesh:D000067575"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ClaimsData",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ElectronicHealthRecords",
+      "definition_uri": "https://w3id.org/hew/measures/ElectronicHealthRecords",
+      "description": "electronic health records",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Electronic Health Records",
+        "electronic health records"
+      ],
+      "exact_mappings": [
+        "mesh:D057286"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ElectronicHealthRecords",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthSurveyData",
+      "definition_uri": "https://w3id.org/hew/measures/HealthSurveyData",
+      "description": "health surveys",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Survey Data",
+        "health surveys"
+      ],
+      "exact_mappings": [
+        "mesh:D006306"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthSurveyData",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MensHealth",
+      "definition_uri": "https://w3id.org/hew/measures/MensHealth",
+      "description": "men's health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Mens Health",
+        "men's health"
+      ],
+      "exact_mappings": [
+        "mesh:D054526"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MensHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WomensHealth",
+      "definition_uri": "https://w3id.org/hew/measures/WomensHealth",
+      "description": "women's health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Womens Health",
+        "women's health"
+      ],
+      "exact_mappings": [
+        "mesh:D016387"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WomensHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OccupationalHealth",
+      "definition_uri": "https://w3id.org/hew/measures/OccupationalHealth",
+      "description": "occupational health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Occupational Health",
+        "occupational health"
+      ],
+      "exact_mappings": [
+        "mesh:D016272"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/OccupationalHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Nutrition",
+      "definition_uri": "https://w3id.org/hew/measures/Nutrition",
+      "description": "nutrition survey",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Nutrition",
+        "nutrition survey"
+      ],
+      "exact_mappings": [
+        "mesh:D009749"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Nutrition",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PhysicalFitness",
+      "definition_uri": "https://w3id.org/hew/measures/PhysicalFitness",
+      "description": "physical fitness",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Physical Fitness",
+        "physical fitness"
+      ],
+      "exact_mappings": [
+        "mesh:D010809"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/PhysicalFitness",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthBehavior",
+      "definition_uri": "https://w3id.org/hew/measures/HealthBehavior",
+      "description": "health behavior",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Behavior",
+        "health behavior"
+      ],
+      "exact_mappings": [
+        "mesh:D015438"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthBehavior",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ChildHealth",
+      "definition_uri": "https://w3id.org/hew/measures/ChildHealth",
+      "description": "child health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Child Health",
+        "child health"
+      ],
+      "exact_mappings": [
+        "mesh:D000067576"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ChildHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AdolescentHealth",
+      "definition_uri": "https://w3id.org/hew/measures/AdolescentHealth",
+      "description": "adolescent health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Adolescent Health",
+        "adolescent health"
+      ],
+      "exact_mappings": [
+        "mesh:D000067697"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AdolescentHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ReproductiveBirth",
+      "definition_uri": "https://w3id.org/hew/measures/ReproductiveBirth",
+      "description": "reproductive history",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Reproductive/Birth",
+        "reproductive history"
+      ],
+      "exact_mappings": [
+        "mesh:D017584"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ReproductiveBirth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/HealthIndicators",
+      "description": "health status indicators",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Indicators",
+        "health status indicators"
+      ],
+      "exact_mappings": [
+        "mesh:D006305"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeriatricHealth",
+      "definition_uri": "https://w3id.org/hew/measures/GeriatricHealth",
+      "description": "healthy aging",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Geriatric Health",
+        "healthy aging"
+      ],
+      "exact_mappings": [
+        "mesh:D000073656"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/GeriatricHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OrthopedicHealth",
+      "definition_uri": "https://w3id.org/hew/measures/OrthopedicHealth",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Orthopedic Health",
+        "not found"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/OrthopedicHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MaternalAndChildHealth",
+      "definition_uri": "https://w3id.org/hew/measures/MaternalAndChildHealth",
+      "description": "maternal health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Maternal and Child Health",
+        "maternal health"
+      ],
+      "exact_mappings": [
+        "mesh:D000068097"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MaternalAndChildHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MedicationAdherence",
+      "definition_uri": "https://w3id.org/hew/measures/MedicationAdherence",
+      "description": "medication adherance",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Medication Adherence",
+        "medication adherance"
+      ],
+      "exact_mappings": [
+        "mesh:D055118"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MedicationAdherence",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DevelopmentalHealth",
+      "definition_uri": "https://w3id.org/hew/measures/DevelopmentalHealth",
+      "description": "developmental origins of health and disease",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Developmental Health",
+        "developmental origins of health and disease"
+      ],
+      "exact_mappings": [
+        "mesh:D000098845"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/DevelopmentalHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PatientReportedOutcomes",
+      "definition_uri": "https://w3id.org/hew/measures/PatientReportedOutcomes",
+      "description": "patient reported outcome measures",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Patient-Reported Outcomes",
+        "patient reported outcome measures"
+      ],
+      "exact_mappings": [
+        "mesh:D000071066"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/PatientReportedOutcomes",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Immunization",
+      "definition_uri": "https://w3id.org/hew/measures/Immunization",
+      "description": "immunization",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Immunization",
+        "immunization"
+      ],
+      "exact_mappings": [
+        "mesh:D007114"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Immunization",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RadiationTherapy",
+      "definition_uri": "https://w3id.org/hew/measures/RadiationTherapy",
+      "description": "radiotherapy",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Radiation Therapy",
+        "radiotherapy"
+      ],
+      "exact_mappings": [
+        "mesh:D011878"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/RadiationTherapy",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DiseaseRisk",
+      "definition_uri": "https://w3id.org/hew/measures/DiseaseRisk",
+      "description": "risk factors",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Disease Risk",
+        "risk factors"
+      ],
+      "exact_mappings": [
+        "mesh:D012307"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/DiseaseRisk",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Disability",
+      "definition_uri": "https://w3id.org/hew/measures/Disability",
+      "description": "persons with disabilities",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Disability",
+        "persons with disabilities"
+      ],
+      "exact_mappings": [
+        "mesh:D006233"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Disability",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Fertility",
+      "definition_uri": "https://w3id.org/hew/measures/Fertility",
+      "description": "fertility",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fertility",
+        "fertility"
+      ],
+      "exact_mappings": [
+        "mesh:D005298"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Fertility",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Genetics",
+      "definition_uri": "https://w3id.org/hew/measures/Genetics",
+      "description": "genetics",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Genetics",
+        "genetics"
+      ],
+      "exact_mappings": [
+        "mesh:D005823"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Genetics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Metabolomics",
+      "definition_uri": "https://w3id.org/hew/measures/Metabolomics",
+      "description": "metabolomics",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Metabolomics",
+        "metabolomics"
+      ],
+      "exact_mappings": [
+        "mesh:D005823"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Metabolomics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ClinicalChemistry",
+      "definition_uri": "https://w3id.org/hew/measures/ClinicalChemistry",
+      "description": "clinical chemistry tests",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Clinical Chemistry",
+        "clinical chemistry tests"
+      ],
+      "exact_mappings": [
+        "mesh:D005823"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ClinicalChemistry",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WellBeing",
+      "definition_uri": "https://w3id.org/hew/measures/WellBeing",
+      "description": "Local concept term for Well-Being",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Well-Being"
+      ],
+      "is_a": "HealthData",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WellBeing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthPopulation",
+      "definition_uri": "https://w3id.org/hew/measures/HealthPopulation",
+      "description": "Subcategory: Health Population",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Health",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthPopulation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneralPopulation",
+      "definition_uri": "https://w3id.org/hew/measures/GeneralPopulation",
+      "description": "population",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "General Population",
+        "population"
+      ],
+      "exact_mappings": [
+        "mesh:D011153"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/GeneralPopulation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Inpatient",
+      "definition_uri": "https://w3id.org/hew/measures/Inpatient",
+      "description": "inpatients",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Inpatient",
+        "inpatients"
+      ],
+      "exact_mappings": [
+        "mesh:D011153"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Inpatient",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Readmissions",
+      "definition_uri": "https://w3id.org/hew/measures/Readmissions",
+      "description": "patient readmission",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Readmissions",
+        "patient readmission"
+      ],
+      "exact_mappings": [
+        "mesh:D010359"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Readmissions",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Outpatient",
+      "definition_uri": "https://w3id.org/hew/measures/Outpatient",
+      "description": "outpatients",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Outpatient",
+        "outpatients"
+      ],
+      "exact_mappings": [
+        "mesh:D010045"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Outpatient",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EmergencyCare",
+      "definition_uri": "https://w3id.org/hew/measures/EmergencyCare",
+      "description": "emergency medical services",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Emergency Care",
+        "emergency medical services"
+      ],
+      "exact_mappings": [
+        "mesh:D004632"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EmergencyCare",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IndigenousPeople",
+      "definition_uri": "https://w3id.org/hew/measures/IndigenousPeople",
+      "description": "indigenous peoples",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Indigenous People",
+        "indigenous peoples"
+      ],
+      "exact_mappings": [
+        "mesh:D000081034"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/IndigenousPeople",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PopulationsOfConcern",
+      "definition_uri": "https://w3id.org/hew/measures/PopulationsOfConcern",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Populations of Concern",
+        "not found"
+      ],
+      "is_a": "HealthPopulation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/PopulationsOfConcern",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthSystem",
+      "definition_uri": "https://w3id.org/hew/measures/HealthSystem",
+      "description": "Subcategory: Health System",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Health",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareProviderCharacteristics",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareProviderCharacteristics",
+      "description": "health personnel",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Provider Characteristics",
+        "health personnel"
+      ],
+      "exact_mappings": [
+        "mesh:D006282"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareProviderCharacteristics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareFacilitiesCharacteristics",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareFacilitiesCharacteristics",
+      "description": "health facilities",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Facilities Characteristics",
+        "health facilities"
+      ],
+      "exact_mappings": [
+        "mesh:D006268"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareFacilitiesCharacteristics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthOutcomes",
+      "definition_uri": "https://w3id.org/hew/measures/HealthOutcomes",
+      "description": "patient outcome assessment",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Outcomes",
+        "patient outcome assessment"
+      ],
+      "exact_mappings": [
+        "mesh:D063868"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthOutcomes",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareQuality",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareQuality",
+      "description": "quality of health care",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Quality",
+        "quality of health care"
+      ],
+      "exact_mappings": [
+        "mesh:D011787"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareQuality",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareIndicators",
+      "description": "quality indicators, health care",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Indicators",
+        "quality indicators, health care"
+      ],
+      "exact_mappings": [
+        "mesh:D019984"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthPrevention",
+      "definition_uri": "https://w3id.org/hew/measures/HealthPrevention",
+      "description": "preventive health service",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Prevention",
+        "preventive health service"
+      ],
+      "exact_mappings": [
+        "mesh:D011314"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthPrevention",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareBenefits",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareBenefits",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Benefits",
+        "not found"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareBenefits",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareReferrals",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareReferrals",
+      "description": "referral and consultation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Referrals",
+        "referral and consultation"
+      ],
+      "exact_mappings": [
+        "mesh:D012017"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareReferrals",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MedicalFinancialAssistance",
+      "definition_uri": "https://w3id.org/hew/measures/MedicalFinancialAssistance",
+      "description": "public assistance",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Medical Financial Assistance",
+        "public assistance"
+      ],
+      "exact_mappings": [
+        "mesh:D011632"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MedicalFinancialAssistance",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCareUtilization",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCareUtilization",
+      "description": "health service utilization",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Care Utilization",
+        "health service utilization"
+      ],
+      "exact_mappings": [
+        "SCDO:0000493"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCareUtilization",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthEquity",
+      "definition_uri": "https://w3id.org/hew/measures/HealthEquity",
+      "description": "health equity",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Equity",
+        "health equity"
+      ],
+      "exact_mappings": [
+        "mesh:D000069576"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthEquity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VaccineSafetyAndEffectiveness",
+      "definition_uri": "https://w3id.org/hew/measures/VaccineSafetyAndEffectiveness",
+      "description": "vaccine effectiveness rate",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vaccine Safety and Effectiveness",
+        "vaccine effectiveness rate"
+      ],
+      "exact_mappings": [
+        "VO:0000443"
+      ],
+      "is_a": "HealthSystem",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VaccineSafetyAndEffectiveness",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthCondition",
+      "definition_uri": "https://w3id.org/hew/measures/HealthCondition",
+      "description": "Subcategory: Health Condition",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Health",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthCondition",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GeneralHealth",
+      "definition_uri": "https://w3id.org/hew/measures/GeneralHealth",
+      "description": "Local concept term for General Health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "General Health"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/GeneralHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CardiovascularSystem",
+      "definition_uri": "https://w3id.org/hew/measures/CardiovascularSystem",
+      "description": "cardiovascular system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Cardiovascular System",
+        "cardiovascular system"
+      ],
+      "exact_mappings": [
+        "UBERON:0004535"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/CardiovascularSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EndocrineSystem",
+      "definition_uri": "https://w3id.org/hew/measures/EndocrineSystem",
+      "description": "endocrine system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Endocrine System",
+        "endocrine system"
+      ],
+      "exact_mappings": [
+        "UBERON:0000949"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EndocrineSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GastrointestinalSystem",
+      "definition_uri": "https://w3id.org/hew/measures/GastrointestinalSystem",
+      "description": "digestive system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Gastrointestinal System",
+        "digestive system"
+      ],
+      "exact_mappings": [
+        "UBERON:0001007"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/GastrointestinalSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HematopoieticSystem",
+      "definition_uri": "https://w3id.org/hew/measures/HematopoieticSystem",
+      "description": "hematopoietic system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Hematopoietic System",
+        "hematopoietic system"
+      ],
+      "exact_mappings": [
+        "UBERON:0002390"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HematopoieticSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ImmuneSystem",
+      "definition_uri": "https://w3id.org/hew/measures/ImmuneSystem",
+      "description": "immune system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Immune System",
+        "immune system"
+      ],
+      "exact_mappings": [
+        "UBERON:0002405"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ImmuneSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IntegumentarySystem",
+      "definition_uri": "https://w3id.org/hew/measures/IntegumentarySystem",
+      "description": "integumental system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Integumentary System",
+        "integumental system"
+      ],
+      "exact_mappings": [
+        "UBERON:0002416"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/IntegumentarySystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MusculoskeletalSystem",
+      "definition_uri": "https://w3id.org/hew/measures/MusculoskeletalSystem",
+      "description": "musculoskeletal",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Musculoskeletal System",
+        "musculoskeletal"
+      ],
+      "exact_mappings": [
+        "UBERON:0002204"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MusculoskeletalSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ReproductiveSystem",
+      "definition_uri": "https://w3id.org/hew/measures/ReproductiveSystem",
+      "description": "reproductive system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Reproductive System",
+        "reproductive system"
+      ],
+      "exact_mappings": [
+        "UBERON:0000990"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ReproductiveSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RespiratorySystem",
+      "definition_uri": "https://w3id.org/hew/measures/RespiratorySystem",
+      "description": "respiratory system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Respiratory System",
+        "respiratory system"
+      ],
+      "exact_mappings": [
+        "UBERON:0001004"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/RespiratorySystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ThoracicSystem",
+      "definition_uri": "https://w3id.org/hew/measures/ThoracicSystem",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Thoracic System",
+        "not found"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ThoracicSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "UrinarySystem",
+      "definition_uri": "https://w3id.org/hew/measures/UrinarySystem",
+      "description": "renal system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Urinary System",
+        "renal system"
+      ],
+      "exact_mappings": [
+        "UBERON:0001008"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/UrinarySystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NervousSystem",
+      "definition_uri": "https://w3id.org/hew/measures/NervousSystem",
+      "description": "nervous system",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Nervous System",
+        "nervous system"
+      ],
+      "exact_mappings": [
+        "UBERON:0001016"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/NervousSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Injury",
+      "definition_uri": "https://w3id.org/hew/measures/Injury",
+      "description": "injury",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Injury",
+        "injury"
+      ],
+      "exact_mappings": [
+        "MONDO:0021178"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Injury",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "InfectiousDisease",
+      "definition_uri": "https://w3id.org/hew/measures/InfectiousDisease",
+      "description": "infectious disease",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Infectious Disease",
+        "infectious disease"
+      ],
+      "exact_mappings": [
+        "MONDO:0005550"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/InfectiousDisease",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Cancer",
+      "definition_uri": "https://w3id.org/hew/measures/Cancer",
+      "description": "neoplasm",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Cancer",
+        "neoplasm"
+      ],
+      "exact_mappings": [
+        "HP:0002664"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Cancer",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Asthma",
+      "definition_uri": "https://w3id.org/hew/measures/Asthma",
+      "description": "asthma",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Asthma",
+        "asthma"
+      ],
+      "exact_mappings": [
+        "HP:0002099"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Asthma",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MentalHealth",
+      "definition_uri": "https://w3id.org/hew/measures/MentalHealth",
+      "description": "mental health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Mental Health",
+        "mental health"
+      ],
+      "exact_mappings": [
+        "mesh:D008603"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MentalHealth",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Diabetes",
+      "definition_uri": "https://w3id.org/hew/measures/Diabetes",
+      "description": "diabetes mellitus",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Diabetes",
+        "diabetes mellitus"
+      ],
+      "exact_mappings": [
+        "HP:0000819"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Diabetes",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Osteoporosis",
+      "definition_uri": "https://w3id.org/hew/measures/Osteoporosis",
+      "description": "osteoporosis",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Osteoporosis",
+        "osteoporosis"
+      ],
+      "exact_mappings": [
+        "HP:0000939"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Osteoporosis",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BirthDefect",
+      "definition_uri": "https://w3id.org/hew/measures/BirthDefect",
+      "description": "congenital abnormalities",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Birth Defect",
+        "congenital abnormalities"
+      ],
+      "exact_mappings": [
+        "mesh:D000013"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/BirthDefect",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ChronicObstructivePulmonaryDiseaseCopd",
+      "definition_uri": "https://w3id.org/hew/measures/ChronicObstructivePulmonaryDiseaseCopd",
+      "description": "chronic pulmonary obstruction",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Chronic Obstructive Pulmonary Disease (COPD)",
+        "chronic pulmonary obstruction"
+      ],
+      "exact_mappings": [
+        "HP:0006510"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ChronicObstructivePulmonaryDiseaseCopd",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HeatRelatedIllnesses",
+      "definition_uri": "https://w3id.org/hew/measures/HeatRelatedIllnesses",
+      "description": "heat related illness",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Heat Related Illnesses",
+        "heat related illness"
+      ],
+      "exact_mappings": [
+        "NCIT:C206556"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HeatRelatedIllnesses",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HormoneDisorder",
+      "definition_uri": "https://w3id.org/hew/measures/HormoneDisorder",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Hormone Disorder",
+        "not found"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HormoneDisorder",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Stroke",
+      "definition_uri": "https://w3id.org/hew/measures/Stroke",
+      "description": "stroke",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Stroke",
+        "stroke"
+      ],
+      "exact_mappings": [
+        "HP:0001297"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Stroke",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "KidneyDisease",
+      "definition_uri": "https://w3id.org/hew/measures/KidneyDisease",
+      "description": "kidney disorder",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Kidney Disease",
+        "kidney disorder"
+      ],
+      "exact_mappings": [
+        "MONDO:0005240"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/KidneyDisease",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Obesity",
+      "definition_uri": "https://w3id.org/hew/measures/Obesity",
+      "description": "obesity",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Obesity",
+        "obesity"
+      ],
+      "exact_mappings": [
+        "HP:0001513"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Obesity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DentalAndOralConditions",
+      "definition_uri": "https://w3id.org/hew/measures/DentalAndOralConditions",
+      "description": "dental disorder",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Dental and Oral Conditions",
+        "dental disorder"
+      ],
+      "exact_mappings": [
+        "NCIT:C35077"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/DentalAndOralConditions",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Arthritis",
+      "definition_uri": "https://w3id.org/hew/measures/Arthritis",
+      "description": "arthritis",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Arthritis",
+        "arthritis"
+      ],
+      "exact_mappings": [
+        "HP:0001369"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Arthritis",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Covid19",
+      "definition_uri": "https://w3id.org/hew/measures/Covid19",
+      "description": "COVID-19",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "COVID-19",
+        "COVID-19"
+      ],
+      "exact_mappings": [
+        "mesh:D000086382"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Covid19",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Death",
+      "definition_uri": "https://w3id.org/hew/measures/Death",
+      "description": "death",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Death",
+        "death"
+      ],
+      "exact_mappings": [
+        "mesh:D003643"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Death",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EyeAndVision",
+      "definition_uri": "https://w3id.org/hew/measures/EyeAndVision",
+      "description": "eye disorder",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Eye and Vision",
+        "eye disorder"
+      ],
+      "exact_mappings": [
+        "MONDO:0005328"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EyeAndVision",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AidsHiv",
+      "definition_uri": "https://w3id.org/hew/measures/AidsHiv",
+      "description": "two terms",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "AIDS/HIV",
+        "two terms"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AidsHiv",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Tuberculosis",
+      "definition_uri": "https://w3id.org/hew/measures/Tuberculosis",
+      "description": "tuberculosis",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Tuberculosis",
+        "tuberculosis"
+      ],
+      "exact_mappings": [
+        "mesh:D014376"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Tuberculosis",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CommunicableDisease",
+      "definition_uri": "https://w3id.org/hew/measures/CommunicableDisease",
+      "description": "infectious disease",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Communicable Disease",
+        "infectious disease"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/CommunicableDisease",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Anemia",
+      "definition_uri": "https://w3id.org/hew/measures/Anemia",
+      "description": "anemia",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Anemia",
+        "anemia"
+      ],
+      "exact_mappings": [
+        "HP:0001903"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Anemia",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HearingLoss",
+      "definition_uri": "https://w3id.org/hew/measures/HearingLoss",
+      "description": "hearing impairment",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Hearing Loss",
+        "hearing impairment"
+      ],
+      "exact_mappings": [
+        "HP:0000365"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HearingLoss",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Allergy",
+      "definition_uri": "https://w3id.org/hew/measures/Allergy",
+      "description": "allergy",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Allergy",
+        "allergy"
+      ],
+      "exact_mappings": [
+        "HP:0012393"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Allergy",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Anxiety",
+      "definition_uri": "https://w3id.org/hew/measures/Anxiety",
+      "description": "anxiety",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Anxiety",
+        "anxiety"
+      ],
+      "exact_mappings": [
+        "HP:0000739"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Anxiety",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Hypertension",
+      "definition_uri": "https://w3id.org/hew/measures/Hypertension",
+      "description": "hypertension",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Hypertension",
+        "hypertension"
+      ],
+      "exact_mappings": [
+        "HP:0000822"
+      ],
+      "is_a": "HealthCondition",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Hypertension",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Environment",
+      "definition_uri": "https://w3id.org/hew/measures/Environment",
+      "description": "Root domain for Environment",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Category",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Environment",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RemoteSensing",
+      "definition_uri": "https://w3id.org/hew/measures/RemoteSensing",
+      "description": "Subcategory: Remote Sensing",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Environment",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/RemoteSensing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NightimeImagery",
+      "definition_uri": "https://w3id.org/hew/measures/NightimeImagery",
+      "description": "Local concept term for Nightime Imagery",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Nightime Imagery"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/NightimeImagery",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LandEnvironmentIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/LandEnvironmentIndicators",
+      "description": "environmental indicators",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Land Environment Indicators",
+        "environmental indicators"
+      ],
+      "exact_mappings": [
+        "mesh:D000079264"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LandEnvironmentIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "InfraredRadiation",
+      "definition_uri": "https://w3id.org/hew/measures/InfraredRadiation",
+      "description": "infrared radiation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Infrared Radiation",
+        "infrared radiation"
+      ],
+      "exact_mappings": [
+        "ENVO:21001214"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/InfraredRadiation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LightAbsorptionScatter",
+      "definition_uri": "https://w3id.org/hew/measures/LightAbsorptionScatter",
+      "description": "two terms",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Light Absorption/Scatter",
+        "two terms"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LightAbsorptionScatter",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SolarRadiation",
+      "definition_uri": "https://w3id.org/hew/measures/SolarRadiation",
+      "description": "solar radiation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Solar Radiation",
+        "solar radiation"
+      ],
+      "exact_mappings": [
+        "ENVO:01001862"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SolarRadiation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "UltravioletRadiation",
+      "definition_uri": "https://w3id.org/hew/measures/UltravioletRadiation",
+      "description": "ultraviolet radiation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Ultraviolet Radiation",
+        "ultraviolet radiation"
+      ],
+      "exact_mappings": [
+        "ENVO:21001216"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/UltravioletRadiation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Radiation",
+      "definition_uri": "https://w3id.org/hew/measures/Radiation",
+      "description": "radiation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Radiation",
+        "radiation"
+      ],
+      "exact_mappings": [
+        "ENVO:01001023"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Radiation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Evaporation",
+      "definition_uri": "https://w3id.org/hew/measures/Evaporation",
+      "description": "evaporation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Evaporation",
+        "evaporation"
+      ],
+      "exact_mappings": [
+        "ENVO:02500034"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Evaporation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RadiativeForcing",
+      "definition_uri": "https://w3id.org/hew/measures/RadiativeForcing",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Radiative Forcing",
+        "not found"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/RadiativeForcing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AtmosphericStability",
+      "definition_uri": "https://w3id.org/hew/measures/AtmosphericStability",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Atmospheric Stability",
+        "not found"
+      ],
+      "is_a": "RemoteSensing",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AtmosphericStability",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Land",
+      "definition_uri": "https://w3id.org/hew/measures/Land",
+      "description": "Subcategory: Land",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Environment",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Land",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Vegetation",
+      "definition_uri": "https://w3id.org/hew/measures/Vegetation",
+      "description": "Nested Subcategory: Vegetation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Land",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Vegetation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Biomass",
+      "definition_uri": "https://w3id.org/hew/measures/Biomass",
+      "description": "organic material",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Biomass",
+        "organic material"
+      ],
+      "exact_mappings": [
+        "ENVO:01000155"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Biomass",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationCover",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationCover",
+      "description": "vegetation layer",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Cover",
+        "vegetation layer"
+      ],
+      "exact_mappings": [
+        "ENVO:01000355"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationCover",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationType",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationType",
+      "description": "vegetation layer",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Type",
+        "vegetation layer"
+      ],
+      "exact_mappings": [
+        "ENVO:01000355"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationType",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationPhenology",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationPhenology",
+      "description": "plant phenology trait",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Phenology",
+        "plant phenology trait"
+      ],
+      "exact_mappings": [
+        "PPO:0002000"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationPhenology",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationStress",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationStress",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Stress",
+        "not found"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationStress",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationProductivity",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationProductivity",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Productivity",
+        "not found"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationProductivity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationStructure",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationStructure",
+      "description": "vegetation layer",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Structure",
+        "vegetation layer"
+      ],
+      "exact_mappings": [
+        "ENVO:01000355"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationStructure",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationIndicators",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Indicators",
+        "not found"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VegetationGreenness",
+      "definition_uri": "https://w3id.org/hew/measures/VegetationGreenness",
+      "description": "vegetated area",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Vegetation Greenness",
+        "vegetated area"
+      ],
+      "exact_mappings": [
+        "ENVO:01001305"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VegetationGreenness",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CanopyCharacteristics",
+      "definition_uri": "https://w3id.org/hew/measures/CanopyCharacteristics",
+      "description": "canopy",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Canopy Characteristics",
+        "canopy"
+      ],
+      "exact_mappings": [
+        "ENVO:01001242"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/CanopyCharacteristics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SolarInducedFluorescence",
+      "definition_uri": "https://w3id.org/hew/measures/SolarInducedFluorescence",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Solar Induced Fluorescence",
+        "not found"
+      ],
+      "is_a": "Vegetation",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SolarInducedFluorescence",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LandSurface",
+      "definition_uri": "https://w3id.org/hew/measures/LandSurface",
+      "description": "Nested Subcategory: Land Surface",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Land",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LandSurface",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Topography",
+      "definition_uri": "https://w3id.org/hew/measures/Topography",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Topography",
+        "not found"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Topography",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SurfaceReflectance",
+      "definition_uri": "https://w3id.org/hew/measures/SurfaceReflectance",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Surface Reflectance",
+        "not found"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SurfaceReflectance",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LandUse",
+      "definition_uri": "https://w3id.org/hew/measures/LandUse",
+      "description": "land use process",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Land Use",
+        "land use process"
+      ],
+      "exact_mappings": [
+        "ENVO:01001431"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LandUse",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LandCover",
+      "definition_uri": "https://w3id.org/hew/measures/LandCover",
+      "description": "vegetated area",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Land Cover",
+        "vegetated area"
+      ],
+      "exact_mappings": [
+        "ENVO:01001305"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LandCover",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LandSurfaceCharacteristics",
+      "definition_uri": "https://w3id.org/hew/measures/LandSurfaceCharacteristics",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Land Surface Characteristics",
+        "not found"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LandSurfaceCharacteristics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SoilMoisture",
+      "definition_uri": "https://w3id.org/hew/measures/SoilMoisture",
+      "description": "concentration of liquid water in soil",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Soil Moisture",
+        "concentration of liquid water in soil"
+      ],
+      "exact_mappings": [
+        "ENVO:09000026"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SoilMoisture",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SoilTemperature",
+      "definition_uri": "https://w3id.org/hew/measures/SoilTemperature",
+      "description": "temperature of soil",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Soil Temperature",
+        "temperature of soil"
+      ],
+      "exact_mappings": [
+        "ENVO:09200012"
+      ],
+      "is_a": "LandSurface",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SoilTemperature",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Water",
+      "definition_uri": "https://w3id.org/hew/measures/Water",
+      "description": "Subcategory: Water",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Environment",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Water",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WaterQuality",
+      "definition_uri": "https://w3id.org/hew/measures/WaterQuality",
+      "description": "Nested Subcategory: Water Quality",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Water",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WaterQuality",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ImpairedWater",
+      "definition_uri": "https://w3id.org/hew/measures/ImpairedWater",
+      "description": "water pollution",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Impaired Water",
+        "water pollution"
+      ],
+      "exact_mappings": [
+        "ENVO:02500039"
+      ],
+      "is_a": "WaterQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ImpairedWater",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DrinkingWater",
+      "definition_uri": "https://w3id.org/hew/measures/DrinkingWater",
+      "description": "drinking water",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Drinking Water",
+        "drinking water"
+      ],
+      "exact_mappings": [
+        "ENVO:00003064"
+      ],
+      "is_a": "WaterQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/DrinkingWater",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WaterComposition",
+      "definition_uri": "https://w3id.org/hew/measures/WaterComposition",
+      "description": "composition of water",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Water Composition",
+        "composition of water"
+      ],
+      "exact_mappings": [
+        "ENVO:09200017"
+      ],
+      "is_a": "WaterQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WaterComposition",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WaterQualityIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/WaterQualityIndicators",
+      "description": "water qulaity",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Water Quality Indicators",
+        "water qulaity"
+      ],
+      "exact_mappings": [
+        "mesh:D060753"
+      ],
+      "is_a": "WaterQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WaterQualityIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WasteWater",
+      "definition_uri": "https://w3id.org/hew/measures/WasteWater",
+      "description": "waste water",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Waste Water",
+        "waste water"
+      ],
+      "exact_mappings": [
+        "ENVO:00002001"
+      ],
+      "is_a": "WaterQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WasteWater",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WaterBodies",
+      "definition_uri": "https://w3id.org/hew/measures/WaterBodies",
+      "description": "Nested Subcategory: Water Bodies",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Water",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WaterBodies",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SeaSurfaceTemperature",
+      "definition_uri": "https://w3id.org/hew/measures/SeaSurfaceTemperature",
+      "description": "temperature of sea surface",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Sea Surface Temperature",
+        "temperature of sea surface"
+      ],
+      "exact_mappings": [
+        "ENVO:04000002"
+      ],
+      "is_a": "WaterBodies",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SeaSurfaceTemperature",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OceanColor",
+      "definition_uri": "https://w3id.org/hew/measures/OceanColor",
+      "description": "color",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Ocean Color",
+        "color"
+      ],
+      "exact_mappings": [
+        "PATO:0000014"
+      ],
+      "is_a": "WaterBodies",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/OceanColor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SeaSurfaceSalinity",
+      "definition_uri": "https://w3id.org/hew/measures/SeaSurfaceSalinity",
+      "description": "salinity",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Sea Surface Salinity",
+        "salinity"
+      ],
+      "exact_mappings": [
+        "PATO:0085001"
+      ],
+      "is_a": "WaterBodies",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SeaSurfaceSalinity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Evapotranspiration",
+      "definition_uri": "https://w3id.org/hew/measures/Evapotranspiration",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Evapotranspiration",
+        "not found"
+      ],
+      "is_a": "WaterBodies",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Evapotranspiration",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GroundWater",
+      "definition_uri": "https://w3id.org/hew/measures/GroundWater",
+      "description": "ground water",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Ground Water",
+        "ground water"
+      ],
+      "exact_mappings": [
+        "ENVO:00002041"
+      ],
+      "is_a": "WaterBodies",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/GroundWater",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SeaIce",
+      "definition_uri": "https://w3id.org/hew/measures/SeaIce",
+      "description": "sea ice",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Sea Ice",
+        "sea ice"
+      ],
+      "exact_mappings": [
+        "ENVO:00002200"
+      ],
+      "is_a": "WaterBodies",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SeaIce",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Air",
+      "definition_uri": "https://w3id.org/hew/measures/Air",
+      "description": "Subcategory: Air",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Environment",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Air",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AirQuality",
+      "definition_uri": "https://w3id.org/hew/measures/AirQuality",
+      "description": "Nested Subcategory: Air Quality",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Air",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AirQuality",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Diesel",
+      "definition_uri": "https://w3id.org/hew/measures/Diesel",
+      "description": "diesel exhaust",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Diesel",
+        "diesel exhaust"
+      ],
+      "exact_mappings": [
+        "ENVO:03510008"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Diesel",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Pm25",
+      "definition_uri": "https://w3id.org/hew/measures/Pm25",
+      "description": "not separated",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "PM2.5",
+        "not separated"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Pm25",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Pm10",
+      "definition_uri": "https://w3id.org/hew/measures/Pm10",
+      "description": "not separated",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "PM10",
+        "not separated"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Pm10",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ParticulateMatterPm25Pm10",
+      "definition_uri": "https://w3id.org/hew/measures/ParticulateMatterPm25Pm10",
+      "description": "ultrafine respirable suspended particulate matter",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Particulate Matter (PM2.5, PM10)",
+        "ultrafine respirable suspended particulate matter"
+      ],
+      "exact_mappings": [
+        "ENVO:01000416"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ParticulateMatterPm25Pm10",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SulfurDioxideSo2",
+      "definition_uri": "https://w3id.org/hew/measures/SulfurDioxideSo2",
+      "description": "sulfur dioxide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Sulfur Dioxide (SO2)",
+        "sulfur dioxide"
+      ],
+      "exact_mappings": [
+        "CHEBI:18422"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SulfurDioxideSo2",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OzoneO3",
+      "definition_uri": "https://w3id.org/hew/measures/OzoneO3",
+      "description": "ozone",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Ozone (O3)",
+        "ozone"
+      ],
+      "exact_mappings": [
+        "CHEBI:25812"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/OzoneO3",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CarbonMonoxideCo",
+      "definition_uri": "https://w3id.org/hew/measures/CarbonMonoxideCo",
+      "description": "carbon monoxide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Carbon Monoxide (CO)",
+        "carbon monoxide"
+      ],
+      "exact_mappings": [
+        "CHEBI:17245"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/CarbonMonoxideCo",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CarbonDioxideCo2",
+      "definition_uri": "https://w3id.org/hew/measures/CarbonDioxideCo2",
+      "description": "carbon dioxide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Carbon Dioxide (CO2)",
+        "carbon dioxide"
+      ],
+      "exact_mappings": [
+        "CHEBI:16526"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/CarbonDioxideCo2",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AirQualityIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/AirQualityIndicators",
+      "description": "not found - see EPA",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Air Quality Indicators",
+        "not found - see EPA"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AirQualityIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AirPollutants",
+      "definition_uri": "https://w3id.org/hew/measures/AirPollutants",
+      "description": "air pollution",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Air Pollutants",
+        "air pollution"
+      ],
+      "exact_mappings": [
+        "ENVO:02500037"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AirPollutants",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NitrogenDioxideNo2",
+      "definition_uri": "https://w3id.org/hew/measures/NitrogenDioxideNo2",
+      "description": "nitrogen dioxide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Nitrogen Dioxide (NO2)",
+        "nitrogen dioxide"
+      ],
+      "exact_mappings": [
+        "CHEBI:33101"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/NitrogenDioxideNo2",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FormaldehydeHcho",
+      "definition_uri": "https://w3id.org/hew/measures/FormaldehydeHcho",
+      "description": "formaldehyde",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Formaldehyde (HCHO)",
+        "formaldehyde"
+      ],
+      "exact_mappings": [
+        "CHEBI:16842"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FormaldehydeHcho",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Dust",
+      "definition_uri": "https://w3id.org/hew/measures/Dust",
+      "description": "dust",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Dust",
+        "dust"
+      ],
+      "exact_mappings": [
+        "ENVO:00002008"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Dust",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AmmoniaNh3",
+      "definition_uri": "https://w3id.org/hew/measures/AmmoniaNh3",
+      "description": "ammonia",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Ammonia (NH3)",
+        "ammonia"
+      ],
+      "exact_mappings": [
+        "CHEBI:16134"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AmmoniaNh3",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Aerosol",
+      "definition_uri": "https://w3id.org/hew/measures/Aerosol",
+      "description": "aerosol",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Aerosol",
+        "aerosol"
+      ],
+      "exact_mappings": [
+        "ENVO:00010505"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Aerosol",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "TraceGases",
+      "definition_uri": "https://w3id.org/hew/measures/TraceGases",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Trace Gases",
+        "not found"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/TraceGases",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "VolatileOrganicCompoundsVoc",
+      "definition_uri": "https://w3id.org/hew/measures/VolatileOrganicCompoundsVoc",
+      "description": "volatile organic compound",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Volatile Organic Compounds (VOC)",
+        "volatile organic compound"
+      ],
+      "exact_mappings": [
+        "CHEBI:134179"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/VolatileOrganicCompoundsVoc",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Aeroallergens",
+      "definition_uri": "https://w3id.org/hew/measures/Aeroallergens",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Aeroallergens",
+        "not found"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Aeroallergens",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BlackCarbon",
+      "definition_uri": "https://w3id.org/hew/measures/BlackCarbon",
+      "description": "carbon black",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Black Carbon",
+        "carbon black"
+      ],
+      "exact_mappings": [
+        "CHEBI:82297"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/BlackCarbon",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MethaneCh4",
+      "definition_uri": "https://w3id.org/hew/measures/MethaneCh4",
+      "description": "methane",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Methane (CH4)",
+        "methane"
+      ],
+      "exact_mappings": [
+        "CHEBI:16183"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/MethaneCh4",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NitrousOxideLaughingGasN2o",
+      "definition_uri": "https://w3id.org/hew/measures/NitrousOxideLaughingGasN2o",
+      "description": "nitrous oxide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Nitrous Oxide (laughing gas, N2O)",
+        "nitrous oxide"
+      ],
+      "exact_mappings": [
+        "CHEBI:749671"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/NitrousOxideLaughingGasN2o",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WaterVapor",
+      "definition_uri": "https://w3id.org/hew/measures/WaterVapor",
+      "description": "water vapour",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Water Vapor",
+        "water vapour"
+      ],
+      "exact_mappings": [
+        "ENVO:01000266"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WaterVapor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ChlorofluorocarbonsCfc",
+      "definition_uri": "https://w3id.org/hew/measures/ChlorofluorocarbonsCfc",
+      "description": "chlorofouorocarbon",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Chlorofluorocarbons (CFC)",
+        "chlorofouorocarbon"
+      ],
+      "exact_mappings": [
+        "CHEBI:134024"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ChlorofluorocarbonsCfc",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NitricOxideNo",
+      "definition_uri": "https://w3id.org/hew/measures/NitricOxideNo",
+      "description": "nitric oxide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Nitric Oxide (NO)",
+        "nitric oxide"
+      ],
+      "exact_mappings": [
+        "CHEBI:16480"
+      ],
+      "is_a": "AirQuality",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/NitricOxideNo",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Wildfire",
+      "definition_uri": "https://w3id.org/hew/measures/Wildfire",
+      "description": "Subcategory: Wildfire",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Environment",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Wildfire",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WildfireCharacteristics",
+      "definition_uri": "https://w3id.org/hew/measures/WildfireCharacteristics",
+      "description": "Nested Subcategory: Wildfire Characteristics",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Wildfire",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WildfireCharacteristics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireArea",
+      "definition_uri": "https://w3id.org/hew/measures/FireArea",
+      "description": "area",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Area",
+        "area"
+      ],
+      "exact_mappings": [
+        "NCIT:C25244"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireArea",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireLocation",
+      "definition_uri": "https://w3id.org/hew/measures/FireLocation",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Location",
+        "not found"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireLocation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BurnSeverity",
+      "definition_uri": "https://w3id.org/hew/measures/BurnSeverity",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Burn Severity",
+        "not found"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/BurnSeverity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FirePerimeter",
+      "definition_uri": "https://w3id.org/hew/measures/FirePerimeter",
+      "description": "perimeter",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Perimeter",
+        "perimeter"
+      ],
+      "exact_mappings": [
+        "PATO:0001711"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FirePerimeter",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireType",
+      "definition_uri": "https://w3id.org/hew/measures/FireType",
+      "description": "land fire",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Type",
+        "land fire"
+      ],
+      "exact_mappings": [
+        "ENVO:01001292"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireType",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireHotspot",
+      "definition_uri": "https://w3id.org/hew/measures/FireHotspot",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Hotspot",
+        "not found"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireHotspot",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireEmission",
+      "definition_uri": "https://w3id.org/hew/measures/FireEmission",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Emission",
+        "not found"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireEmission",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireFuel",
+      "definition_uri": "https://w3id.org/hew/measures/FireFuel",
+      "description": "fuel",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Fuel",
+        "fuel"
+      ],
+      "exact_mappings": [
+        "CHEBI:33292"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireFuel",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireSmoke",
+      "definition_uri": "https://w3id.org/hew/measures/FireSmoke",
+      "description": "smoke",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Smoke",
+        "smoke"
+      ],
+      "exact_mappings": [
+        "ENVO:01000838"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireSmoke",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireDetail",
+      "definition_uri": "https://w3id.org/hew/measures/FireDetail",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Detail",
+        "not found"
+      ],
+      "is_a": "WildfireCharacteristics",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireDetail",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "WildfireManagement",
+      "definition_uri": "https://w3id.org/hew/measures/WildfireManagement",
+      "description": "Nested Subcategory: Wildfire Management",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Wildfire",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/WildfireManagement",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireDeathAndInjury",
+      "definition_uri": "https://w3id.org/hew/measures/FireDeathAndInjury",
+      "description": "death by fire (event)",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Death and Injury",
+        "death by fire (event)"
+      ],
+      "exact_mappings": [
+        "SNOMED:67786008"
+      ],
+      "is_a": "WildfireManagement",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireDeathAndInjury",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireDamage",
+      "definition_uri": "https://w3id.org/hew/measures/FireDamage",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Damage",
+        "not found"
+      ],
+      "is_a": "WildfireManagement",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireDamage",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireSuppression",
+      "definition_uri": "https://w3id.org/hew/measures/FireSuppression",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Suppression",
+        "not found"
+      ],
+      "is_a": "WildfireManagement",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireSuppression",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireForecasting",
+      "definition_uri": "https://w3id.org/hew/measures/FireForecasting",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Forecasting",
+        "not found"
+      ],
+      "is_a": "WildfireManagement",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireForecasting",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FireManagement",
+      "definition_uri": "https://w3id.org/hew/measures/FireManagement",
+      "description": "planned burn",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Fire Management",
+        "planned burn"
+      ],
+      "exact_mappings": [
+        "ENVO:03000122"
+      ],
+      "is_a": "WildfireManagement",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FireManagement",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Weather",
+      "definition_uri": "https://w3id.org/hew/measures/Weather",
+      "description": "Subcategory: Weather",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Environment",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Weather",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Drought",
+      "definition_uri": "https://w3id.org/hew/measures/Drought",
+      "description": "drought",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Drought",
+        "drought"
+      ],
+      "exact_mappings": [
+        "ENVO:1000745"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Drought",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Heat",
+      "definition_uri": "https://w3id.org/hew/measures/Heat",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Heat",
+        "not found"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Heat",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Precipitation",
+      "definition_uri": "https://w3id.org/hew/measures/Precipitation",
+      "description": "hydrological precipitation process",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Precipitation",
+        "hydrological precipitation process"
+      ],
+      "exact_mappings": [
+        "ENVO:01000703"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Precipitation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Temperature",
+      "definition_uri": "https://w3id.org/hew/measures/Temperature",
+      "description": "temperature",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Temperature",
+        "temperature"
+      ],
+      "exact_mappings": [
+        "PATO:0000146"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Temperature",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Flooding",
+      "definition_uri": "https://w3id.org/hew/measures/Flooding",
+      "description": "flood",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Flooding",
+        "flood"
+      ],
+      "exact_mappings": [
+        "ENVO:01000710"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Flooding",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Hurricanes",
+      "definition_uri": "https://w3id.org/hew/measures/Hurricanes",
+      "description": "cyclone",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Hurricanes",
+        "cyclone"
+      ],
+      "exact_mappings": [
+        "ENVO:01001297"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Hurricanes",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Tornados",
+      "definition_uri": "https://w3id.org/hew/measures/Tornados",
+      "description": "tornado",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Tornados",
+        "tornado"
+      ],
+      "exact_mappings": [
+        "ENVO:01001482"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Tornados",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Wildfires",
+      "definition_uri": "https://w3id.org/hew/measures/Wildfires",
+      "description": "wildfire",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Wildfires",
+        "wildfire"
+      ],
+      "exact_mappings": [
+        "ENVO:01000787"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Wildfires",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Humidity",
+      "definition_uri": "https://w3id.org/hew/measures/Humidity",
+      "description": "humidity",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Humidity",
+        "humidity"
+      ],
+      "exact_mappings": [
+        "PATO:0015009"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Humidity",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Winds",
+      "definition_uri": "https://w3id.org/hew/measures/Winds",
+      "description": "atmospheric wind",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Winds",
+        "atmospheric wind"
+      ],
+      "exact_mappings": [
+        "ENVO:01000793"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Winds",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Clouds",
+      "definition_uri": "https://w3id.org/hew/measures/Clouds",
+      "description": "cloud",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Clouds",
+        "cloud"
+      ],
+      "exact_mappings": [
+        "ENVO:01000760"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Clouds",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "UvRadiation",
+      "definition_uri": "https://w3id.org/hew/measures/UvRadiation",
+      "description": "Local concept term for UV Radiation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "UV Radiation"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/UvRadiation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Lightning",
+      "definition_uri": "https://w3id.org/hew/measures/Lightning",
+      "description": "atmospheric lightning",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Lightning",
+        "atmospheric lightning"
+      ],
+      "exact_mappings": [
+        "ENVO:01000898"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Lightning",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Snow",
+      "definition_uri": "https://w3id.org/hew/measures/Snow",
+      "description": "snow",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Snow",
+        "snow"
+      ],
+      "exact_mappings": [
+        "ENVO:01000406"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Snow",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Sunlight",
+      "definition_uri": "https://w3id.org/hew/measures/Sunlight",
+      "description": "solar radiation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Sunlight",
+        "solar radiation"
+      ],
+      "exact_mappings": [
+        "ENVO:01001862"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Sunlight",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BarometricPressure",
+      "definition_uri": "https://w3id.org/hew/measures/BarometricPressure",
+      "description": "pressure of air",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Barometric Pressure",
+        "pressure of air"
+      ],
+      "exact_mappings": [
+        "ENVO:09200011"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/BarometricPressure",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DewPoint",
+      "definition_uri": "https://w3id.org/hew/measures/DewPoint",
+      "description": "dew point",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Dew Point",
+        "dew point"
+      ],
+      "exact_mappings": [
+        "ENVO:01001859"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/DewPoint",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Visibility",
+      "definition_uri": "https://w3id.org/hew/measures/Visibility",
+      "description": "atmospheric aerosol",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Visibility",
+        "atmospheric aerosol"
+      ],
+      "exact_mappings": [
+        "ENVO:01001652"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Visibility",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Monsoon",
+      "definition_uri": "https://w3id.org/hew/measures/Monsoon",
+      "description": "monsoon wind",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Monsoon",
+        "monsoon wind"
+      ],
+      "exact_mappings": [
+        "ENVO:03000130"
+      ],
+      "is_a": "Weather",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Monsoon",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Social",
+      "definition_uri": "https://w3id.org/hew/measures/Social",
+      "description": "Root domain for Social",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Category",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Social",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SocialContext",
+      "definition_uri": "https://w3id.org/hew/measures/SocialContext",
+      "description": "Subcategory: Social Context",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Social",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SocialContext",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Demographics",
+      "definition_uri": "https://w3id.org/hew/measures/Demographics",
+      "description": "demographic",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Demographics",
+        "demographic"
+      ],
+      "exact_mappings": [
+        "mesh:D003710"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Demographics",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Immigration",
+      "definition_uri": "https://w3id.org/hew/measures/Immigration",
+      "description": "emigration and immigration",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Immigration",
+        "emigration and immigration"
+      ],
+      "exact_mappings": [
+        "mesh:D004641"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Immigration",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LivingConditions",
+      "definition_uri": "https://w3id.org/hew/measures/LivingConditions",
+      "description": "home environment",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Living Conditions",
+        "home environment"
+      ],
+      "exact_mappings": [
+        "mesh:D004641"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LivingConditions",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SocioeconomicIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/SocioeconomicIndicators",
+      "description": "socioeconomic factors",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Socioeconomic Indicators",
+        "socioeconomic factors"
+      ],
+      "exact_mappings": [
+        "mesh:D012959"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SocioeconomicIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Segregation",
+      "definition_uri": "https://w3id.org/hew/measures/Segregation",
+      "description": "social segregation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Segregation",
+        "social segregation"
+      ],
+      "exact_mappings": [
+        "mesh:D012959"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Segregation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Traffic",
+      "definition_uri": "https://w3id.org/hew/measures/Traffic",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Traffic",
+        "not found"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Traffic",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EnvironmentalJusticeIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/EnvironmentalJusticeIndicators",
+      "description": "environmental justice",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Environmental Justice Indicators",
+        "environmental justice"
+      ],
+      "exact_mappings": [
+        "mesh:D000091383"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EnvironmentalJusticeIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SocialVulnerabilityIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/SocialVulnerabilityIndicators",
+      "description": "social vulnerability",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Social Vulnerability Indicators",
+        "social vulnerability"
+      ],
+      "exact_mappings": [
+        "mesh:D000091482"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SocialVulnerabilityIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RuralUrban",
+      "definition_uri": "https://w3id.org/hew/measures/RuralUrban",
+      "description": "urbanization",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Rural/Urban",
+        "urbanization"
+      ],
+      "exact_mappings": [
+        "mesh:D014507"
+      ],
+      "is_a": "SocialContext",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/RuralUrban",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Economic",
+      "definition_uri": "https://w3id.org/hew/measures/Economic",
+      "description": "Subcategory: Economic",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Social",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Economic",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Income",
+      "definition_uri": "https://w3id.org/hew/measures/Income",
+      "description": "income",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Income",
+        "income"
+      ],
+      "exact_mappings": [
+        "mesh:D007182"
+      ],
+      "is_a": "Economic",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Income",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Employment",
+      "definition_uri": "https://w3id.org/hew/measures/Employment",
+      "description": "employment",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Employment",
+        "employment"
+      ],
+      "exact_mappings": [
+        "mesh:D004651"
+      ],
+      "is_a": "Economic",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Employment",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Poverty",
+      "definition_uri": "https://w3id.org/hew/measures/Poverty",
+      "description": "poverty",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Poverty",
+        "poverty"
+      ],
+      "exact_mappings": [
+        "mesh:D011203"
+      ],
+      "is_a": "Economic",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Poverty",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OccupationAndIndustry",
+      "definition_uri": "https://w3id.org/hew/measures/OccupationAndIndustry",
+      "description": "technology, industry and agriculture",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Occupation and Industry",
+        "technology, industry and agriculture"
+      ],
+      "exact_mappings": [
+        "http://purl.obolibrary.org/obo/mesh#J"
+      ],
+      "is_a": "Economic",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/OccupationAndIndustry",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Education",
+      "definition_uri": "https://w3id.org/hew/measures/Education",
+      "description": "Subcategory: Education",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Social",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Education",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ProximityToSchool",
+      "definition_uri": "https://w3id.org/hew/measures/ProximityToSchool",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Proximity to School",
+        "not found"
+      ],
+      "is_a": "Education",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ProximityToSchool",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EducationAttainment",
+      "definition_uri": "https://w3id.org/hew/measures/EducationAttainment",
+      "description": "education level",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Education Attainment",
+        "education level"
+      ],
+      "exact_mappings": [
+        "NCIT:C17953"
+      ],
+      "is_a": "Education",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EducationAttainment",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SchoolSystem",
+      "definition_uri": "https://w3id.org/hew/measures/SchoolSystem",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "School System",
+        "not found"
+      ],
+      "is_a": "Education",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SchoolSystem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EducationalFunding",
+      "definition_uri": "https://w3id.org/hew/measures/EducationalFunding",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Educational Funding",
+        "not found"
+      ],
+      "is_a": "Education",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EducationalFunding",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Literacy",
+      "definition_uri": "https://w3id.org/hew/measures/Literacy",
+      "description": "literacy",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Literacy",
+        "literacy"
+      ],
+      "exact_mappings": [
+        "GSSO:010553"
+      ],
+      "is_a": "Education",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Literacy",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Numeracy",
+      "definition_uri": "https://w3id.org/hew/measures/Numeracy",
+      "description": "quantitative literacy",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Numeracy",
+        "quantitative literacy"
+      ],
+      "exact_mappings": [
+        "GSSO:010556"
+      ],
+      "is_a": "Education",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Numeracy",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PhysicalInfrastructure",
+      "definition_uri": "https://w3id.org/hew/measures/PhysicalInfrastructure",
+      "description": "Subcategory: Physical Infrastructure",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Social",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/PhysicalInfrastructure",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Housing",
+      "definition_uri": "https://w3id.org/hew/measures/Housing",
+      "description": "housing",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Housing",
+        "housing"
+      ],
+      "exact_mappings": [
+        "mesh:D006798"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Housing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Internet",
+      "definition_uri": "https://w3id.org/hew/measures/Internet",
+      "description": "internet",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Internet",
+        "internet"
+      ],
+      "exact_mappings": [
+        "mesh:D020407"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Internet",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SocialServices",
+      "definition_uri": "https://w3id.org/hew/measures/SocialServices",
+      "description": "social work",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Social Services",
+        "social work"
+      ],
+      "exact_mappings": [
+        "mesh:D012947"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/SocialServices",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FoodAccess",
+      "definition_uri": "https://w3id.org/hew/measures/FoodAccess",
+      "description": "access to healthy foods",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Food Access",
+        "access to healthy foods"
+      ],
+      "exact_mappings": [
+        "mesh:D000091483"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FoodAccess",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AccessToExercise",
+      "definition_uri": "https://w3id.org/hew/measures/AccessToExercise",
+      "description": "exercise",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Access to Exercise",
+        "exercise"
+      ],
+      "exact_mappings": [
+        "mesh:D015444"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/AccessToExercise",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Migration",
+      "definition_uri": "https://w3id.org/hew/measures/Migration",
+      "description": "human migration",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Migration",
+        "human migration"
+      ],
+      "exact_mappings": [
+        "mesh:D063426"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Migration",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Crime",
+      "definition_uri": "https://w3id.org/hew/measures/Crime",
+      "description": "crime",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Crime",
+        "crime"
+      ],
+      "exact_mappings": [
+        "mesh:D003415"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Crime",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IndustryComposition",
+      "definition_uri": "https://w3id.org/hew/measures/IndustryComposition",
+      "description": "industry",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Industry Composition",
+        "industry"
+      ],
+      "exact_mappings": [
+        "mesh:D007221"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/IndustryComposition",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Transportation",
+      "definition_uri": "https://w3id.org/hew/measures/Transportation",
+      "description": "transportation",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Transportation",
+        "transportation"
+      ],
+      "exact_mappings": [
+        "mesh:D014186"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Transportation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Walkability",
+      "definition_uri": "https://w3id.org/hew/measures/Walkability",
+      "description": "perceived walkability of neighborhood (observable entity)",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Walkability",
+        "perceived walkability of neighborhood (observable entity)"
+      ],
+      "exact_mappings": [
+        "SNOMED:1220610008"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Walkability",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BuiltEnvironmentIndicators",
+      "definition_uri": "https://w3id.org/hew/measures/BuiltEnvironmentIndicators",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Built Environment Indicators",
+        "not found"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/BuiltEnvironmentIndicators",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "BuiltEnvironment",
+      "definition_uri": "https://w3id.org/hew/measures/BuiltEnvironment",
+      "description": "built environment",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Built Environment",
+        "built environment"
+      ],
+      "exact_mappings": [
+        "mesh:D000076624"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/BuiltEnvironment",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GreenSpace",
+      "definition_uri": "https://w3id.org/hew/measures/GreenSpace",
+      "description": "parks, recreational",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Green Space",
+        "parks, recreational"
+      ],
+      "exact_mappings": [
+        "mesh:D000068316"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/GreenSpace",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Commute",
+      "definition_uri": "https://w3id.org/hew/measures/Commute",
+      "description": "commute",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Commute",
+        "commute"
+      ],
+      "exact_mappings": [
+        "NCIT:C141285"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Commute",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthcareAccess",
+      "definition_uri": "https://w3id.org/hew/measures/HealthcareAccess",
+      "description": "Subcategory: Healthcare Access",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Social",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthcareAccess",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HealthInsurance",
+      "definition_uri": "https://w3id.org/hew/measures/HealthInsurance",
+      "description": "insurance, health",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Health Insurance",
+        "insurance, health"
+      ],
+      "exact_mappings": [
+        "mesh:D007348"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HealthInsurance",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "DistanceToProvider",
+      "definition_uri": "https://w3id.org/hew/measures/DistanceToProvider",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Distance to Provider",
+        "not found"
+      ],
+      "is_a": "PhysicalInfrastructure",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/DistanceToProvider",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Exposures",
+      "definition_uri": "https://w3id.org/hew/measures/Exposures",
+      "description": "Root domain for Exposures",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "is_a": "Category",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/Exposures",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ProximityToHazards",
+      "definition_uri": "https://w3id.org/hew/measures/ProximityToHazards",
+      "description": "proximally connected to",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Proximity to Hazards",
+        "proximally connected to"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/ProximityToHazards",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HouseholdExposures",
+      "definition_uri": "https://w3id.org/hew/measures/HouseholdExposures",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Household Exposures",
+        "not found"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/HouseholdExposures",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PesticideHerbicideAndFungicideExposure",
+      "definition_uri": "https://w3id.org/hew/measures/PesticideHerbicideAndFungicideExposure",
+      "description": "pesticide",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Pesticide Herbicide and Fungicide Exposure",
+        "pesticide"
+      ],
+      "exact_mappings": [
+        "CHEBI:25944"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/PesticideHerbicideAndFungicideExposure",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RadonExposure",
+      "definition_uri": "https://w3id.org/hew/measures/RadonExposure",
+      "description": "radon(0)",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Radon Exposure",
+        "radon(0)"
+      ],
+      "exact_mappings": [
+        "CHEBI:49997"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/RadonExposure",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "LeadExposure",
+      "definition_uri": "https://w3id.org/hew/measures/LeadExposure",
+      "description": "lead(2+)",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Lead Exposure",
+        "lead(2+)"
+      ],
+      "exact_mappings": [
+        "CHEBI:49807"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/LeadExposure",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CarbonMonoxidePoisoning",
+      "definition_uri": "https://w3id.org/hew/measures/CarbonMonoxidePoisoning",
+      "description": "carbon monoxide poisoning",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Carbon Monoxide Poisoning",
+        "carbon monoxide poisoning"
+      ],
+      "exact_mappings": [
+        "MONDO:0800373"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/CarbonMonoxidePoisoning",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "FoodBasedExposures",
+      "definition_uri": "https://w3id.org/hew/measures/FoodBasedExposures",
+      "description": "not found",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Food-based Exposures",
+        "not found"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/FoodBasedExposures",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EnvironmentalExposures",
+      "definition_uri": "https://w3id.org/hew/measures/EnvironmentalExposures",
+      "description": "exposure to environmental material",
+      "from_schema": "https://w3id.org/hew/measures/schema",
+      "aliases": [
+        "Environmental Exposures",
+        "exposure to environmental material"
+      ],
+      "exact_mappings": [
+        "ECTO:0000015"
+      ],
+      "is_a": "Exposures",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/hew/measures/EnvironmentalExposures",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.11.0",
+  "source_file": "HewMeasures.yaml",
+  "source_file_date": "2026-10-14T07:49:06",
+  "source_file_size": 39834,
+  "generation_date": "2026-10-14T07:49:28",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "https://w3id.org/linkml/meta.context.jsonld",
+    {
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "CHEBI": {
+        "@id": "http://purl.obolibrary.org/obo/CHEBI_",
+        "@prefix": true
+      },
+      "ECTO": {
+        "@id": "http://purl.obolibrary.org/obo/ECTO_",
+        "@prefix": true
+      },
+      "ENVO": {
+        "@id": "http://purl.obolibrary.org/obo/ENVO_",
+        "@prefix": true
+      },
+      "GSSO": "http://example.org/UNKNOWN/GSSO/",
+      "HP": {
+        "@id": "http://purl.obolibrary.org/obo/HP_",
+        "@prefix": true
+      },
+      "MONDO": {
+        "@id": "http://purl.obolibrary.org/obo/MONDO_",
+        "@prefix": true
+      },
+      "NCIT": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_",
+        "@prefix": true
+      },
+      "PATO": {
+        "@id": "http://purl.obolibrary.org/obo/PATO_",
+        "@prefix": true
+      },
+      "PPO": "http://example.org/UNKNOWN/PPO/",
+      "SCDO": {
+        "@id": "http://purl.obolibrary.org/obo/SCDO_",
+        "@prefix": true
+      },
+      "SNOMED": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+      "UBERON": {
+        "@id": "http://purl.obolibrary.org/obo/UBERON_",
+        "@prefix": true
+      },
+      "VO": {
+        "@id": "http://purl.obolibrary.org/obo/VO_",
+        "@prefix": true
+      },
+      "chebi": {
+        "@id": "http://purl.obolibrary.org/obo/CHEBI_",
+        "@prefix": true
+      },
+      "ecto": {
+        "@id": "http://purl.obolibrary.org/obo/ECTO_",
+        "@prefix": true
+      },
+      "envo": {
+        "@id": "http://purl.obolibrary.org/obo/ENVO_",
+        "@prefix": true
+      },
+      "hp": {
+        "@id": "http://purl.obolibrary.org/obo/HP_",
+        "@prefix": true
+      },
+      "mesh": "http://id.nlm.nih.gov/mesh/",
+      "mondo": {
+        "@id": "http://purl.obolibrary.org/obo/MONDO_",
+        "@prefix": true
+      },
+      "ncit": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_",
+        "@prefix": true
+      },
+      "pato": {
+        "@id": "http://purl.obolibrary.org/obo/PATO_",
+        "@prefix": true
+      },
+      "scdo": {
+        "@id": "http://purl.obolibrary.org/obo/SCDO_",
+        "@prefix": true
+      },
+      "snomed": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+      "uberon": {
+        "@id": "http://purl.obolibrary.org/obo/UBERON_",
+        "@prefix": true
+      },
+      "vo": {
+        "@id": "http://purl.obolibrary.org/obo/VO_",
+        "@prefix": true
+      },
+      "vocab": "https://w3id.org/hew/measures/"
+    },
+    {
+      "@base": "https://w3id.org/hew/measures/"
+    }
+  ]
+}
+
