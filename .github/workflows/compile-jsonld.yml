@@ -63,8 +63,7 @@ jobs:
         gen-doc --directory dist/docs_markdown data/HewMeasures.yaml
         
         # mkdocs compiles those markdown files into clean, styled static HTML files
-        cd dist/docs_markdown
-        mkdocs build --site-dir ../dist/docs_html
+        mkdocs build --config-file mkdocs.yml
       shell: bash
 
     # Step 7: Commit and push the generated files back to GitHub

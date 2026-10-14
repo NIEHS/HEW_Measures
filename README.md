@@ -78,9 +78,8 @@ gen-jsonld-context data/HewMeasures.yaml > dist/hew_measures_context.jsonld
 To generate the LinkML reference documentation and build the MkDocs site:
 
 ```sh
-gen-doc --directory docs_markdown data/HewMeasures.yaml
-cd docs_markdown
-mkdocs build --site-dir ../docs_html
+gen-doc --directory dist/docs_markdown data/HewMeasures.yaml
+mkdocs build --config-file mkdocs.yml
 ```
 
 To generate a schemasheet from the YAML schema (currently does not work!):
