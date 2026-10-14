@@ -1,20 +1,20 @@
-id: https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld
+id: https://w3id.org/hew/measures/schema
 name: hew_measures_vocabulary
 version: 1.0.0
 prefixes:
-  mesh: http://nih.gov
-  uberon: http://obolibrary.org_
-  mondo: http://obolibrary.org_
-  chebi: http://obolibrary.org_
-  ncit: http://obolibrary.org_
-  hp: http://obolibrary.org_
-  ecto: http://obolibrary.org_
-  vo: http://obolibrary.org_
-  scdo: http://obolibrary.org_
-  pato: http://obolibrary.org_
-  envo: http://obolibrary.org_
-  snomed: http://snomed.info
-  vocab: https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld
+  mesh: http://id.nlm.nih.gov/mesh/
+  uberon: http://purl.obolibrary.org/obo/UBERON_
+  mondo: http://purl.obolibrary.org/obo/MONDO_
+  chebi: http://purl.obolibrary.org/obo/CHEBI_
+  ncit: http://purl.obolibrary.org/obo/NCIT_
+  hp: http://purl.obolibrary.org/obo/HP_
+  ecto: http://purl.obolibrary.org/obo/ECTO_
+  vo: http://purl.obolibrary.org/obo/VO_
+  scdo: http://purl.obolibrary.org/obo/SCDO_
+  pato: http://purl.obolibrary.org/obo/PATO_
+  envo: http://purl.obolibrary.org/obo/ENVO_
+  snomed: http://purl.bioontology.org/ontology/SNOMEDCT/
+  vocab: https://w3id.org/hew/measures/
 default_prefix: vocab
 default_range: string
 classes:

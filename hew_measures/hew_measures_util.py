@@ -12,15 +12,20 @@ def clean_classname(text):
 
 def build_schema_from_csv(csv_filepath):
     schema = SchemaDefinition(
-        id="http://example.org",
-        name="nexus_exposome",
+        id="https://w3id.org/hew/measures/schema",
+        name="hew_measures",
         default_prefix="vocab"
     )
 
     # Establish ontologies namespaces
-    schema.prefixes['vocab'] = Prefix(prefix_prefix='vocab', prefix_reference='http://example.org')
-    schema.prefixes['mesh'] = Prefix(prefix_prefix='mesh', prefix_reference='http://nih.gov')
-    schema.prefixes['envo'] = Prefix(prefix_prefix='envo', prefix_reference='http://obolibrary.org_')
+    schema.prefixes['vocab'] = Prefix(prefix_prefix='vocab', prefix_reference='https://w3id.org/hew/measures/')
+    schema.prefixes['mesh'] = Prefix(prefix_prefix='mesh', prefix_reference='http://id.nlm.nih.gov/mesh/')
+    schema.prefixes['envo'] = Prefix(prefix_prefix='envo', prefix_reference='http://purl.obolibrary.org/obo/ENVO_')
+    schema.prefixes['chebi'] = Prefix(prefix_prefix='chebi', prefix_reference='http://purl.obolibrary.org/obo/CHEBI_')
+    schema.prefixes['uberon'] = Prefix(prefix_prefix='uberon', prefix_reference='http://purl.obolibrary.org/obo/UBERON_')
+    schema.prefixes['mondo'] = Prefix(prefix_prefix='mondo', prefix_reference='http://purl.obolibrary.org/obo/MONDO_')
+    schema.prefixes['hp'] = Prefix(prefix_prefix='hp', prefix_reference='http://purl.obolibrary.org/obo/HP_')
+    schema.prefixes['ecto'] = Prefix(prefix_prefix='ecto', prefix_reference='http://purl.obolibrary.org/obo/ECTO_')
 
     with open(csv_filepath, mode='r', encoding='utf-8') as f:
         reader = csv.DictReader(f)

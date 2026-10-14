@@ -7,6 +7,24 @@ import argparse
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
+PREFIXES = {
+    "HEWM": "https://w3id.org/hew/measures/term/",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "uberon": "http://purl.obolibrary.org/obo/UBERON_",
+    "mondo": "http://purl.obolibrary.org/obo/MONDO_",
+    "chebi": "http://purl.obolibrary.org/obo/CHEBI_",
+    "ncit": "http://purl.obolibrary.org/obo/NCIT_",
+    "hp": "http://purl.obolibrary.org/obo/HP_",
+    "ecto": "http://purl.obolibrary.org/obo/ECTO_",
+    "vo": "http://purl.obolibrary.org/obo/VO_",
+    "scdo": "http://purl.obolibrary.org/obo/SCDO_",
+    "pato": "http://purl.obolibrary.org/obo/PATO_",
+    "envo": "http://purl.obolibrary.org/obo/ENVO_",
+    "snomed": "http://purl.bioontology.org/ontology/SNOMEDCT/",
+    "gsso": "http://purl.obolibrary.org/obo/GSSO_",
+    "ppo": "http://purl.obolibrary.org/obo/PPO_",
+    "vocab": "https://w3id.org/hew/measures/",
+}
 
 
 def clean_id(text):
@@ -23,10 +41,17 @@ def clean_id(text):
 def parse_ontology_ids(row):
     """Extracts ontology IDs from the row, handling multi-term entries."""
     mappings = []
+
+    def normalize_curie(value):
+        prefix, separator, identifier = value.partition(":")
+        if separator and prefix.lower() in PREFIXES:
+            return f"{prefix.lower()}:{identifier}"
+        return value
+
     # Primary ontology ID column check
     primary_id = row.get('ontology ID', '').strip()
     if primary_id and ":" in primary_id and "not found" not in primary_id.lower() and "not in" not in primary_id.lower():
-        mappings.append(primary_id)
+        mappings.append(normalize_curie(primary_id))
 
     # Check for secondary ontology IDs in trailing columns (e.g., for AIDS/HIV)
     # This safely scans all values in the row dictionary for pattern matches
@@ -34,32 +59,19 @@ def parse_ontology_ids(row):
         if value and isinstance(value, str):
             matches = re.findall(r'\b[A-Z]+:\d+\b', value)
             for match in matches:
-                if match not in mappings:
-                    mappings.append(match)
+                normalized_match = normalize_curie(match)
+                if normalized_match not in mappings:
+                    mappings.append(normalized_match)
     return mappings
 
 
 def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
     # Initialize the base LinkML structure
     linkml_dict = {
-        "id": "https://NIEHS.github.io/HEW_Measures/hew_measures.jsonld",
+        "id": "https://w3id.org/hew/measures/schema",
         "name": "hew_measures_vocabulary",
         "version": "1.0.0",
-        "prefixes": {
-            "mesh": "http://nih.gov",
-            "uberon": "http://obolibrary.org_",
-            "mondo": "http://obolibrary.org_",
-            "chebi": "http://obolibrary.org_",
-            "ncit": "http://obolibrary.org_",
-            "hp": "http://obolibrary.org_",
-            "ecto": "http://obolibrary.org_",
-            "vo": "http://obolibrary.org_",
-            "scdo": "http://obolibrary.org_",
-            "pato": "http://obolibrary.org_",
-            "envo": "http://obolibrary.org_",
-            "snomed": "http://snomed.info",
-            "vocab": "https://NIEHS.github.io/HEW_Measures/dist/hew_measures.jsonld"
-        },
+        "prefixes": PREFIXES,
         "default_prefix": "vocab",
         "default_range": "string",
         "classes": {
@@ -75,7 +87,7 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
     with open(csv_filepath, mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
 
-        for row in reader:
+        for row_number, row in enumerate(reader, start=2):
             # Skip empty rows, section header headers, or column definition re-declarations
             if not row.get('Category') or row['Category'].startswith(',') or "Category" in row['Category']:
                 continue
@@ -89,7 +101,8 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
             cat_id = clean_id(cat_raw)
             sub1_id = clean_id(sub1_raw)
             sub2_id = clean_id(sub2_raw)
-            term_id = clean_id(term_raw)
+            assigned_curie = f"HEWM:{row_number:07d}"
+            class_name = f"HEWM{row_number:07d}"
 
             # 1. Establish Top Level Category (e.g., Health, Environment)
             if cat_id not in classes:
@@ -116,27 +129,27 @@ def csv_to_linkml_yaml(csv_filepath, yaml_outputpath):
                 current_parent = sub2_id
 
             # 4. Create Concrete Leaf Term, add ontology term as an alias
-            if term_id not in classes:
-                aliases = [term_raw]
-                if row.get('ontology term'):
-                    aliases.append(row['ontology term'].strip())
-                class_entry = {
-                    "is_a": current_parent,
-                    "aliases": aliases
-                }
+            aliases = [term_raw]
+            if row.get('ontology term'):
+                aliases.append(row['ontology term'].strip())
+            class_entry = {
+                "class_uri": assigned_curie,
+                "is_a": current_parent,
+                "aliases": aliases
+            }
 
-                # Add human-focused descriptions if documented
-                if row.get('ontology term'):
-                    class_entry["description"] = row['ontology term'].strip()
-                else:
-                    class_entry["description"] = f"Local concept term for {term_raw}"
+            # Add human-focused descriptions if documented
+            if row.get('ontology term'):
+                class_entry["description"] = row['ontology term'].strip()
+            else:
+                class_entry["description"] = f"Local concept term for {term_raw}"
 
-                # Parse out mappings cleanly
-                mappings = parse_ontology_ids(row)
-                if mappings:
-                    class_entry["exact_mappings"] = mappings
+            # Parse out mappings cleanly
+            mappings = parse_ontology_ids(row)
+            if mappings:
+                class_entry["exact_mappings"] = mappings
 
-                classes[term_id] = class_entry
+            classes[class_name] = class_entry
 
     # Output the structured Python dictionary straight into pristine YAML format
     with open(yaml_outputpath, 'w', encoding='utf-8') as yf:
@@ -166,5 +179,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
