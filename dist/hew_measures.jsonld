@@ -7309,11 +7309,10 @@
       "@type": "ClassDefinition"
     }
   ],
-  "metamodel_version": "1.11.0",
+  "metamodel_version": "1.12.0",
   "source_file": "HewMeasures.yaml",
-  "source_file_date": "2026-10-14T08:23:48",
-  "source_file_size": 92815,
-  "generation_date": "2026-10-14T08:23:49",
+  "source_file_date": "2026-10-14T16:05:48",
+  "source_file_size": 92848,
   "@type": "SchemaDefinition",
   "@context": [
     "https://w3id.org/linkml/meta.context.jsonld",
